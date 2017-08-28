@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f6f6f6">
+
+    <include layout="@layout/layout_ole_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/w30"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_zccg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/w10"
+            android:text="恭喜你，注册成功！"
+            android:textColor="@color/c_222222"
+            android:textSize="@dimen/sp18"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/w15"
+            android:text="检测到该手机号已注册会员,"
+            android:textColor="@color/c_222222"
+            android:textSize="@dimen/sp14"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/w5"
+            android:text="建议补充信息完成会员卡绑定！"
+            android:textColor="@color/c_222222"
+            android:textSize="@dimen/sp14"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/w25"
+            android:text="以下任选其一填写即可！"
+            android:textColor="@color/c_222222"
+            android:textSize="@dimen/sp15"/>
+        <EditText
+            android:id="@+id/username_edt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w50"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_rtx_small"
+            android:drawablePadding="10dp"
+            android:textColor="@color/c_888888"
+            android:hint="请输入姓名"
+            android:textSize="@dimen/sp16"
+            android:singleLine="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/b_b6b6b6" />
+        <EditText
+            android:id="@+id/userident_edt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w50"
+            android:background="@null"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_sfz_small"
+            android:drawablePadding="10dp"
+            android:hint="请输入身份证"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/c_888888"
+            android:singleLine="true" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/b_b6b6b6" />
+
+        <Button
+            android:id="@+id/bindBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w40"
+            android:layout_marginTop="35dp"
+            android:enabled="false"
+            android:text="绑定"
+            android:textColor="@color/txt_ff"
+            android:background="@drawable/btn_disable"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

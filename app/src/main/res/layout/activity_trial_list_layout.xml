@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_ole_title"/>
+
+    <com.handmark.pulltorefresh.library.extras.recyclerview.PullToRefreshRecyclerView
+        android:id="@+id/trial_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        ptr:ptrMode="both" />
+
+
+</LinearLayout>
+
+

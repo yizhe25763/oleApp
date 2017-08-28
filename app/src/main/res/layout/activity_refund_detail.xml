@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        tools:context="com.crv.ole.shopping.activity.RefundDetailActivity">
+
+        <include layout="@layout/toolbar_layout" />
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#f6f6f6"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:textColor="#222222"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvWuLiu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tvState"
+                        android:layout_alignBottom="@+id/tvState"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="22dp"
+                        android:layout_marginRight="22dp"
+                        android:gravity="center"
+                        android:text="退货物流状态"
+                        android:textColor="#d9be64"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+
+                <com.crv.ole.view.TwoTextView
+                    android:id="@+id/tvTklx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    app:leftTitle="退款类型"
+                     />
+
+                <com.crv.ole.view.TwoTextView
+                    android:id="@+id/tvTkje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    app:leftTitle="退款金额" />
+
+                <com.crv.ole.view.TwoTextView
+                    android:id="@+id/tvTkyy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    app:leftTitle="退款原因" />
+
+                <com.crv.ole.view.TwoTextView
+                    android:id="@+id/tvTksm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    app:leftTitle="退款说明"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:background="#dbdbdb" />
+
+                <com.crv.ole.view.TwoTextView
+                    android:id="@+id/tvDdh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    app:leftTitle="订单号" />
+
+                <com.crv.ole.view.TwoTextView
+                    android:id="@+id/tvTkdh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    app:leftTitle="退款单号"/>
+
+                <com.crv.ole.view.TwoTextView
+                    android:id="@+id/tvThydh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    app:leftTitle="退货运单号" />
+
+
+                <LinearLayout
+                    android:id="@+id/txtkdh_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="退款单号"
+                        android:textColor="#999999"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtkdh_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="请填入运单号"
+                        android:textColor="#debd6e"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:background="#dbdbdb" />
+
+                <com.crv.ole.view.TwoTextView
+                    android:id="@+id/tvSqsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    app:leftTitle="申请时间" />
+
+                <com.crv.ole.view.TwoTextView
+                    android:id="@+id/tvShtgsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    app:leftTitle="审核通过时间" />
+
+                <com.crv.ole.view.TwoTextView
+                    android:id="@+id/tvYdhlrsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    app:leftTitle="运单号录入时间" />
+
+                <com.crv.ole.view.TwoTextView
+                    android:id="@+id/tvTkdscsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    app:leftTitle="退款单生成时间"/>
+
+                <com.crv.ole.view.TwoTextView
+                    android:id="@+id/tvTksj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    app:leftTitle="退款时间" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:background="#dbdbdb" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="163dp">
+
+                    <LinearLayout
+                        android:id="@+id/help_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/w70"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/w35"
+                            android:layout_height="@dimen/h35"
+                            android:src="@drawable/btn_hyld_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/h8"
+                            android:text="拨打电话"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/dividr"
+                        android:layout_width="0.5dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="#dbdbdb" />
+
+                    <LinearLayout
+                        android:id="@+id/help_kefu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/w70"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/w35"
+                            android:layout_height="@dimen/h35"
+                            android:src="@drawable/btn_kefu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/h8"
+                            android:text="在线客服"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

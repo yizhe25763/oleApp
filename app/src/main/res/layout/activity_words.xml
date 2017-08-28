@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f6f6f6">
+
+    <include layout="@layout/layout_ole_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w45"
+        android:background="@color/c_9b9580">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lybq"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/w20"
+        android:orientation="vertical"
+        android:background="@color/txt_ff">
+        <TextView
+            android:id="@+id/set_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/w10"
+            android:text="选择问题分类"
+            android:textColor="@color/c_666666"
+            android:textSize="@dimen/sp16"
+            android:drawableRight="@mipmap/ic_into_pressed" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w1"
+            android:background="@color/d_dbdbdb"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w100"
+            android:layout_marginTop="@dimen/w40"
+            android:padding="@dimen/w8"
+            android:hint="请输入您的意见和建议"
+            android:textColor="@color/c_666666"
+            android:textSize="@dimen/sp16"
+            android:inputType="textMultiLine"
+            android:gravity="left|top"
+            android:background="@drawable/lyk"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/w40"
+            android:text="您注册的手机号"
+            android:textColor="@color/txt_22"
+            android:textSize="@dimen/sp16"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w40"
+            android:layout_marginTop="@dimen/w10"
+            android:padding="@dimen/w8"
+            android:gravity="center_vertical"
+            android:hint="@string/phone_hint"
+            android:textColor="@color/c_666666"
+            android:textSize="@dimen/sp16"
+            android:singleLine="true"
+            android:inputType="number"
+            android:background="@drawable/lyk"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

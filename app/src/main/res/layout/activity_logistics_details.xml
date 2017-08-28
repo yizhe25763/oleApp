@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.crv.ole.personalcenter.activity.LogisticsDetailsActivity">
+
+    <include layout="@layout/layout_ole_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="物流模块信息">
+
+                <ImageView
+                    android:id="@+id/logistics_pic"
+                    android:layout_width="@dimen/w110"
+                    android:layout_height="@dimen/h110"
+                    android:layout_margin="@dimen/w20"
+                    android:src="@drawable/capture02" />
+
+                <TextView
+                    android:id="@+id/logistics_status_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/logistics_pic"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/w4"
+                    android:layout_toRightOf="@id/logistics_pic"
+                    android:text="物流状态："
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/logistics_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/logistics_status_tip"
+                    android:layout_toRightOf="@id/logistics_status_tip"
+                    android:text="已签收"
+                    android:textColor="#d9be64"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/logistics_company_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/logistics_status_tip"
+                    android:layout_below="@id/logistics_status_tip"
+                    android:layout_marginTop="@dimen/w10"
+                    android:text="承运公司："
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/logistics_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/logistics_company_tip"
+                    android:layout_toRightOf="@id/logistics_company_tip"
+                    android:text="顺丰快递"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/logistics_waybill_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/logistics_status_tip"
+                    android:layout_below="@id/logistics_company_tip"
+                    android:layout_marginTop="@dimen/w10"
+                    android:text="运单编号："
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/logistics_waybill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/logistics_waybill_tip"
+                    android:layout_toRightOf="@id/logistics_waybill_tip"
+                    android:text="123456789"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/logistics_tel_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/logistics_status_tip"
+                    android:layout_below="@id/logistics_waybill_tip"
+                    android:layout_marginTop="@dimen/w10"
+                    android:text="物流电话："
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/logistics_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/logistics_tel_tip"
+                    android:layout_toRightOf="@id/logistics_tel_tip"
+                    android:text="0707-7466633"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#b6b6b6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f6f6f6"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:text="以下数据由快递100提供"
+                android:textColor="#222222"
+                android:textSize="13sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/logintics_detal_recy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h1"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/w60"
+                android:layout_marginRight="@dimen/w60"
+                android:layout_marginTop="@dimen/h30"
+                android:background="#979797" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/h15"
+                android:layout_marginTop="@dimen/h15">
+
+                <LinearLayout
+                    android:id="@+id/logistics_details_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/w70"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/w35"
+                        android:layout_height="@dimen/h35"
+                        android:src="@drawable/btn_hyld_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h8"
+                        android:text="拨打电话"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/logistics_details_kefu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/w70"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/w35"
+                        android:layout_height="@dimen/h35"
+                        android:src="@drawable/btn_kefu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h8"
+                        android:text="在线客服"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

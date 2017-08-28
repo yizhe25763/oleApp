@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/layout_ole_title"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/im_pay_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/h75"
+            android:background="@mipmap/img_pay_success" />
+
+
+        <TextView
+            android:id="@+id/tx_pay_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_pay_state"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/h40"
+            android:text="@string/pay_state_success"
+            android:textColor="@color/c_222222"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_bt_state_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/h100"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/bt_back_to_shop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/w20"
+            android:layout_marginRight="@dimen/w20"
+            android:background="@drawable/btn_dlan_normal"
+            android:text="@string/back_to_shop"
+            android:textColor="@color/white"
+            android:textSize="@dimen/w14" />
+
+        <Button
+            android:id="@+id/bt_back_to_home"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/w20"
+            android:layout_marginRight="@dimen/w20"
+            android:layout_marginTop="@dimen/h20"
+            android:background="@drawable/btn_cjan"
+            android:text="@string/back_to_home"
+            android:textColor="@color/c_222222" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_bt_state_failed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/h100"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_back_to_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/w20"
+            android:layout_marginRight="@dimen/w20"
+            android:background="@drawable/btn_cjan"
+            android:text="@string/back_to_order"
+            android:textColor="@color/c_222222" />
+
+    </LinearLayout>
+
+</LinearLayout>

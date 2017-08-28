@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_ole_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/w30"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_wh"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/w20"
+            android:text="该手机号已经注册过会员，是否要重新注册会员?"
+            android:textSize="@dimen/sp15"
+            android:textColor="@color/c_9B9580"/>
+
+        <Button
+            android:id="@+id/choose_bindVip_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w40"
+            android:layout_marginTop="@dimen/w100"
+            android:text="我要绑定原有会员卡"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_dlan_normal"/>
+
+        <Button
+            android:id="@+id/choose_regist_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w40"
+            android:layout_marginTop="@dimen/w20"
+            android:text="我要更换手机重新注册"
+            android:background="@drawable/btn_cjan"/>
+    </LinearLayout>
+</RelativeLayout>

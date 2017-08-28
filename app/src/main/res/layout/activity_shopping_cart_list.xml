@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.crv.ole.shopping.activity.ShoppingCartListActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <RelativeLayout
+        android:id="@+id/rlGwcEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:contentDescription="购物车为空的时候"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ivGwcEmpty"
+            android:layout_width="122dp"
+            android:layout_height="122dp"
+            android:src="@drawable/gwc_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivGwcEmpty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="购物车该补货啦"
+            android:textColor="#9b9580"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlJieSuan"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#DBDBDB"
+        android:contentDescription="结算操作"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btnJieSuan"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#9B9581"
+            android:text="结算(%d)"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvShiFu"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btnJieSuan"
+            android:gravity="center_vertical|right"
+            android:paddingRight="15dp"
+            android:text="￥ 30899"
+            android:textColor="#222222"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tvYiSheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tvShiFu"
+            android:text="不含运费  已省: ￥ 48"
+            android:textColor="#222222"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBianJi"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#DBDBDB"
+        android:contentDescription="编辑操作"
+        android:visibility="invisible">
+
+        <CheckBox
+            android:id="@+id/rbQuanXuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/checkbox_selector"
+            android:padding="10dp"
+            android:text="全选"
+            android:textColor="#222222"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnDel"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#9B9581"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnCollection"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btnDel"
+            android:background="#666666"
+            android:text="转入心愿单"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="45dp">
+
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+            android:id="@+id/swipeMenuRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/rlJieSuan"
+            android:scrollbars="none"
+            android:visibility="invisible" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

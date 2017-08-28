@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rlTimeline"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:id="@+id/tvTopLine"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#e8e8e8" />
+
+        <ImageView
+            android:id="@+id/tvDot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/timelline_dot_normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="13dp"
+        android:paddingRight="10dp"
+        android:paddingTop="14dp">
+
+        <TextView
+            android:id="@+id/item_logistics_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.3"
+            android:text="快件在深圳,准备送往下一站深圳集散中心[深圳市]"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_logistics_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_logistics_station"
+            android:layout_marginTop="5dp"
+            android:text="2014/06/24 20:55:28"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>
+

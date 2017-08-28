@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_ole_title" />
+
+    <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/collection_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout">
+
+        <GridView
+            android:id="@+id/collection_goods_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/w10"
+            android:background="@color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:drawSelectorOnTop="true"
+            android:horizontalSpacing="@dimen/w10"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/h5" />
+
+    </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+
+</RelativeLayout>
+

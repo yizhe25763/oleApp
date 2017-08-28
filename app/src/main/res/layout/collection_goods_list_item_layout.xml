@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c_f6f6f6"
+    android:orientation="vertical"
+    android:padding="@dimen/w1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h185">
+
+        <ImageView
+            android:id="@+id/collection_goods_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/collection_goods_item_mgl_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/img_mgl" />
+
+        <TextView
+            android:id="@+id/collection_goods_item_warn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/c_B29B9580"
+            android:paddingBottom="@dimen/h5"
+            android:paddingLeft="@dimen/w15"
+            android:paddingRight="@dimen/w15"
+            android:paddingTop="@dimen/h5"
+            android:text="提醒"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp12" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/w1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/collection_goods_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/w15"
+            android:maxLines="2"
+            android:textColor="@color/c_222222"
+            android:textSize="@dimen/sp16" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/h15"
+            android:layout_marginLeft="@dimen/w15"
+            android:layout_marginRight="@dimen/w15">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/collection_goods_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="234"
+                    android:textColor="@color/c_222222"
+                    android:textSize="@dimen/sp20" />
+
+                <ImageView
+                    android:id="@+id/collection_goods_item_level_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/w5"
+                    android:src="@drawable/ic_v1" />
+
+                <TextView
+                    android:id="@+id/collection_goods_item_old_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/w5"
+                    android:text="234"
+                    android:textColor="@color/c_222222"
+                    android:textSize="@dimen/sp10" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/collection_goods_item_gwc_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w5"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_gwc_button_selector" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

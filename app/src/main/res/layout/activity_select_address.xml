@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_ole_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cecece" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rgArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbProvince"
+                style="@style/style_area_radiobtn"
+                android:checked="true"
+                android:text="请选择" />
+
+            <RadioButton
+                android:id="@+id/rbCity"
+                style="@style/style_area_radiobtn"
+                android:text="请选择" />
+
+            <RadioButton
+                android:id="@+id/rbArea"
+                style="@style/style_area_radiobtn"
+                android:text="请选择" />
+
+        </RadioGroup>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/c_d2d2d2">
+
+            <View
+                android:id="@+id/cart_tab_dom"
+                android:layout_width="100dip"
+                android:layout_height="2dp"
+                android:background="#0055a4" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        style="@style/customListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp">
+
+    </ListView>
+
+</LinearLayout>

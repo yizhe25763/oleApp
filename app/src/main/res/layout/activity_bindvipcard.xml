@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_ole_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/w40">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机用户"
+            android:textColor="@color/c_222222"
+            android:textSize="@dimen/sp18"/>
+        <TextView
+            android:id="@+id/bindCard_phoneTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/w8"
+            android:text=""
+            android:textSize="@dimen/sp18"
+            android:textColor="@color/c_9b9580"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/w25"
+            android:text="请输入其中一栏，验证您的身份"
+            android:textColor="@color/c_222222"
+            android:textSize="@dimen/sp14"/>
+        <EditText
+            android:id="@+id/bindCard_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w40"
+            android:layout_marginTop="@dimen/w40"
+            android:drawableLeft="@mipmap/ic_rtx"
+            android:drawablePadding="@dimen/w6"
+            android:hint="@string/vipCard_name_hint"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/lightgrey"
+            android:background="@null"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w1"
+            android:background="@color/b_b6b6b6"/>
+
+        <EditText
+            android:id="@+id/bindCard_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w40"
+            android:layout_marginTop="@dimen/w20"
+            android:drawableLeft="@mipmap/ic_rtx"
+            android:drawablePadding="@dimen/w6"
+            android:hint="@string/vipCard_card_hint"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/lightgrey"
+            android:background="@null"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w1"
+            android:background="@color/b_b6b6b6"/>
+
+        <Button
+            android:id="@+id/bindCard_bind"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w40"
+            android:layout_marginTop="@dimen/w50"
+            android:text="@string/vipCard_bind"
+            android:textColor="@color/white"
+            android:enabled="false"
+            android:background="@drawable/confirm_btn_selector"/>
+    </LinearLayout>
+
+</RelativeLayout>

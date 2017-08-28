@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- dialog -->
+    <dimen name="dialog_btn_width_size">60.0dip</dimen>
+    <dimen name="dialog_control_distance_size">2.0dip</dimen>
+    <dimen name="dialog_btn_to_btn_size">20.0dip</dimen>
+	<dimen name="dialog_text_size">14sp</dimen>
+	<dimen name="normal_progress_size">32.0dip</dimen>
+
+</resources>

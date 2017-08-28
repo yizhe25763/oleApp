@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_order_num"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h36"
+            android:background="@color/f6">
+
+            <TextView
+                android:id="@+id/tx_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w20"
+                android:textColor="@color/txt_66"
+                android:textSize="@dimen/sp13" />
+
+            <TextView
+                android:id="@+id/da_pass_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/h20"
+                android:text="待审核"
+                android:textColor="@color/d_d9be64"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/pass_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/h20"
+                android:text="审核通过"
+                android:textColor="@color/d_d9be64"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unpass_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/h20"
+                android:text="审核未通过"
+                android:textColor="@color/txt_66"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/h20"
+            android:layout_marginTop="@dimen/h20"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/h101"
+                android:layout_height="@dimen/h109"
+                android:layout_marginLeft="@dimen/h20"
+                android:background="@drawable/f6_bg_corner_shape">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tx_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="@dimen/h2"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="@dimen/h5"
+                    android:maxLines="2"
+                    android:minHeight="36dp"
+                    android:textColor="@color/c_666666"
+                    android:textSize="13dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10">
+
+
+                    <TextView
+                        android:id="@+id/info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/h20"
+                        android:layout_weight="1"
+                        android:lineSpacingExtra="@dimen/w5"
+                        android:textColor="@color/txt_22"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/b_b6b6b6" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/bt_click"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/h20"
+        android:layout_marginRight="@dimen/h20"
+        android:layout_marginTop="@dimen/h135"
+        android:background="@drawable/bt_bg_b5_shape"
+        android:gravity="center"
+        android:paddingLeft="@dimen/w5"
+        android:paddingRight="@dimen/w5"
+        android:textColor="@color/txt_66"
+        android:textSize="13dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WheelView">
+        <attr name="intervalTime" format="integer" min="3" /> <!-- 广告播放间隔时间 -->
+        <attr name="isNeedPoint" format="boolean" /> <!-- 是否需要下面的圆点,默认为true -->
+        <attr name="pointImage" format="reference" /> <!-- 默认圆点图片 -->
+        <attr name="pointedImage" format="reference" /> <!-- 选中状态的圆点图片 -->
+        <attr name="isAutoWheel" format="boolean" /> <!-- 是否自动轮播，默认为true -->
+    </declare-styleable>
+
+    <!-- 滑动指示器 -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsTableTextColor" format="color" />
+        <attr name="pstsTableTextSelectColor" format="color" />
+        <attr name="pstsTableBackgroundColor" format="color" />
+        <attr name="pstsTableSelectBackgroundColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsIndicatorMarginLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTabPadding" format="dimension" />
+        <attr name="pstsTextSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="BadgeImgTextView">
+        <attr name="badgeTitle" format="string" />
+        <attr name="badgeDrawable" format="reference" />
+        <attr name="badgeCount" format="string" />
+        <attr name="badgeCountTextSize" format="dimension" />
+        <attr name="badgeTitleColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchView">
+        <!-- 是否有阴影 -->
+        <attr name="hasShadow" format="boolean" />
+        <attr name="primaryColor" format="color" />
+        <attr name="primaryColorDark" format="color" />
+        <attr name="isOpened" format="boolean" />
+    </declare-styleable>
+
+    <!--预售页面限量进度条-->
+    <declare-styleable name="CustomProgressBar">
+        <attr name="progressColor" format="color" />
+        <attr name="progressDescColor" format="color" />
+        <attr name="progressRadius" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="progress" format="integer" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="progressDesc" format="string" />
+        <attr name="isShowDesc" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EdgeTranView">
+        <attr name="edge_position">
+            <flag name="top" value="0x01" />
+            <flag name="bottom" value="0x02" />
+            <flag name="left" value="0x04" />
+            <flag name="right" value="0x08" />
+        </attr>
+        <attr name="edge_width" format="dimension" />
+    </declare-styleable>
+
+    <!--下拉菜单-->
+    <declare-styleable name="DropDownMenu">
+
+        <attr name="ddunderlineColor" format="color" />
+        <attr name="dddividerColor" format="color" />
+        <attr name="ddtextSelectedColor" format="color" />
+        <attr name="ddtextUnselectedColor" format="color" />
+        <attr name="ddmenuBackgroundColor" format="color" />
+        <attr name="ddmaskColor" format="color" />
+        <attr name="ddPopuMenuColor" format="color" />
+        <attr name="ddmenuTextSize" format="dimension" />
+        <attr name="ddmenuSelectedIcon" format="reference" />
+        <attr name="ddmenuUnselectedIcon" format="reference" />
+        <attr name="ddmenuMenuHeightPercent" format="float" />
+        <attr name="addLine" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TwoTextView">
+        <attr name="leftTitle" format="string" />
+        <attr name="leftTitleColor" format="color" />
+        <attr name="leftTitleSize" format="dimension" />
+        <attr name="rightTitle" format="string" />
+        <attr name="rightTitleColor" format="color" />
+        <attr name="rightTitleSize" format="dimension" />
+    </declare-styleable>
+</resources>

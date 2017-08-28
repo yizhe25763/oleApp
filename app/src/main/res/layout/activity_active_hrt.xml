@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f6f6f6">
+
+    <include
+        android:id="@+id/vipCard_title_layout"
+        layout="@layout/layout_ole_title"/>
+
+    <Button
+        android:id="@+id/vipCard_active"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/vipCard_active"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/txt_ff"
+        android:background="@color/c_9B957F"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/vipCard_title_layout"
+        android:layout_above="@+id/vipCard_active">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/w15">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="条款及细则"
+                android:textColor="@color/c_222222"
+                android:textSize="@dimen/sp18"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w20"
+                android:text="1.    华润通特约商家指开通了华润通会员服务的商户，包括华润万家、Ole’精品超市、blt精品超市、blt express精品超市、O’vamos餐厅、V>NGO便利店、V+超市、万象城、太平洋咖啡、木棉花酒店、中艺、华润堂、健一网等华润旗下品牌以及酒店、餐饮、购物、出行等加盟商户，具体商户范围以平台公告为准。"
+                android:textColor="@color/c_666666"
+                android:textSize="@dimen/sp15"
+                android:lineSpacingExtra="@dimen/w8"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w20"
+                android:text="2.	华润通平台经营者是指经营华润通平台的各法律主体，亦称“华润通”。"
+                android:textColor="@color/c_666666"
+                android:textSize="@dimen/sp15"
+                android:lineSpacingExtra="@dimen/w8"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w20"
+                android:text="3.	适用门店指已中国大陆地区已开通华润通会员服务的Ole’精品超市、blt精品超市、blt express精品超市和O’vamos餐厅的门店，如有范围变更则以各门店实际公告为准。"
+                android:textColor="@color/c_666666"
+                android:textSize="@dimen/sp15"
+                android:lineSpacingExtra="@dimen/w8"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w20"
+                android:text="4.	华润卡分为畅享会员、优享会员、尊享会员三个等级，有效期均为12个月。不同等级的会员在不同的华润通特约商户可享受不同的会员权益，具体权益以特约商家相关公告为准。在华润通特约商户内每消费1元将获得1个成长值，会员等级到期后将根据有效期内实际累积的成长值进行升级、维持、降级和保级的会员等级调整："
+                android:textColor="@color/c_666666"
+                android:textSize="@dimen/sp15"
+                android:lineSpacingExtra="@dimen/w8"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w20"
+                android:text="4.1.	自升级之日起未来12个月内累积消费若达到现等级的最低门槛，即可保留并更新下年度等级不变；"
+                android:textColor="@color/c_666666"
+                android:textSize="@dimen/sp15"
+                android:lineSpacingExtra="@dimen/w8"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w20"
+                android:text="4.2.	自升级之日起未来12个月内累积消费若无法达到现等级的最低门槛，则等级有效期结束后将降至下一级别的会员等级，直至达到最低级别会员卡；"
+                android:textColor="@color/c_666666"
+                android:textSize="@dimen/sp15"
+                android:lineSpacingExtra="@dimen/w8"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w20"
+                android:text="4.3.	自降级之日起三个月内，若累积消费满足原等级最低门槛的1/2金额，即视为保级成功并在翌日升至原会员等级，等级有效期自调整之日起12个月。"
+                android:textColor="@color/c_666666"
+                android:textSize="@dimen/sp15"
+                android:lineSpacingExtra="@dimen/w8"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w20"
+                android:text="5.	您必须在结账前出示您的华润卡方可积分，如有退货、换货，将扣除或调整相应华润通会员积分。"
+                android:textColor="@color/c_666666"
+                android:textSize="@dimen/sp15"
+                android:lineSpacingExtra="@dimen/w8"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w20"
+                android:text="5.1.	您必须在华润卡适用门店至少消费1元人民币方可开始积分，购物消费1元可获1点积分，不足1元的部分不积分，以此类推。"
+                android:textColor="@color/c_666666"
+                android:textSize="@dimen/sp15"
+                android:lineSpacingExtra="@dimen/w8"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

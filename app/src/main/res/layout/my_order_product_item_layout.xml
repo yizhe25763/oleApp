@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/h20"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/h100"
+            android:layout_height="@dimen/h108"
+            android:layout_marginLeft="@dimen/h30"
+            android:background="@drawable/f6_bg_corner_shape">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/capture01" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_pre"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:visibility="visible"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shape_bottom_9b">
+
+                <TextView
+                    android:id="@+id/tx_pre_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="预售"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <me.codeboy.android.aligntextview.AlignTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="53dp"
+                android:layout_marginTop="@dimen/h22"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/h5"
+                android:maxLines="2"
+                android:text="精选特级进口牛油果精选特级进口牛油果"
+                android:textColor="@color/c_222222"
+                android:textSize="13dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_weight="1"
+                    android:text="￥89.00"
+                    android:textColor="@color/txt_22"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/h30"
+                    android:text="2"
+                    android:textColor="@color/txt_22"
+                    android:textSize="@dimen/h14" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

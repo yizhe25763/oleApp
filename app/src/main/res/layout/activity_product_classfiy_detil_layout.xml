@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_ole_title" />
+
+    <com.crv.ole.classfiy.view.DropDownMenu
+        android:id="@+id/dropDownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:addLine="false"
+        app:ddmaskColor="@color/mask_color"
+        app:ddmenuBackgroundColor="@color/f6"
+        app:ddmenuMenuHeightPercent="0.35"
+        app:ddmenuSelectedIcon="@mipmap/btn_jt_s"
+        app:ddmenuTextSize="@dimen/w13"
+        app:ddmenuUnselectedIcon="@mipmap/btn_jt_x"
+        app:ddtextSelectedColor="@color/_6"
+        app:ddtextUnselectedColor="@color/_6" />
+
+</LinearLayout>

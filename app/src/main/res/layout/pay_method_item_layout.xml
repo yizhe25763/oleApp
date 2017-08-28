@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/choose_pay_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c_ffffff">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/d_dbdbdb" />
+
+    <TextView
+        android:id="@+id/choose_pay_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/w50"
+        android:layout_marginLeft="@dimen/w20"
+        android:gravity="center_vertical"
+        android:text="@string/user_weixin_login"
+        android:textColor="@color/c_222222"
+        android:textSize="@dimen/sp20" />
+
+    <ImageView
+        android:id="@+id/choose_pay_item_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/w10"
+        android:background="@color/transparent"
+        android:padding="@dimen/w10"
+        android:src="@drawable/btn_spxz_xz" />
+</RelativeLayout>

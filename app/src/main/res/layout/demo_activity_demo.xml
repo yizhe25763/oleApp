@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_demo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.crv.ole.demo.activity.DemoActivity">
+    <include layout="@layout/layout_title_bar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="match_parent">
+            <TextView
+                    android:text="网络访问"
+                    android:id="@+id/tvNetDemo"
+                    android:onClick="onClick"
+                    style="@style/demo_style_text"/>
+            <TextView
+                    android:text="上传图片"
+                    android:id="@+id/tvUploadImg"
+                    android:onClick="onClick"
+                    style="@style/demo_style_text"/>
+            <TextView
+                    android:text="下拉刷新上拉加载"
+                    android:id="@+id/tvRefreshAndLoadMore"
+                    android:onClick="onClick"
+                    style="@style/demo_style_text"/>
+            <TextView
+                    android:text="横幅广告"
+                    android:id="@+id/tvGdBanner"
+                    android:onClick="onClick"
+                    style="@style/demo_style_text"/>
+            <TextView
+                    android:text="Tab页面切换"
+                    android:id="@+id/tvTab"
+                    android:onClick="onClick"
+                    style="@style/demo_style_text"/>
+            <TextView
+                    android:text="开屏页和引导页"
+                    android:id="@+id/tvSplash"
+                    android:onClick="onClick"
+                    style="@style/demo_style_text"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_ole_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/h20"
+            android:layout_marginRight="@dimen/h20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="39dp"
+                android:text="@string/applay_type"
+                android:textColor="@color/txt_22"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w5"
+                android:text="@string/applay_type_info"
+                android:textColor="@color/_6"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="39dp"
+                android:text="@string/get_type"
+                android:textColor="@color/txt_22"
+                android:textSize="14dp" />
+
+            <me.codeboy.android.aligntextview.AlignTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w5"
+                android:lineSpacingExtra="@dimen/h5"
+                android:text="@string/get_type_info"
+                android:textColor="@color/_6"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="39dp"
+                android:text="@string/applay_report"
+                android:textColor="@color/txt_22"
+                android:textSize="14dp" />
+
+            <me.codeboy.android.aligntextview.AlignTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w5"
+                android:lineSpacingExtra="@dimen/h5"
+                android:text="@string/applay_report_info"
+                android:textColor="@color/_6"
+                android:textSize="14dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:layout_marginTop="@dimen/h20"
+                android:background="@drawable/red_shape">
+
+                <me.codeboy.android.aligntextview.AlignTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/w10"
+                    android:layout_marginRight="@dimen/w10"
+                    android:layout_marginTop="@dimen/h11"
+                    android:lineSpacingExtra="@dimen/h5"
+                    android:text="@string/trial_applay_tishi"
+                    android:textColor="@color/fa5959"
+
+                    android:textSize="14dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_ole_title" />
+
+    <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/trial_report_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/fragment_home_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/trial_report_goods_info_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/h375"
+                        android:background="@color/c_f6f6f6">
+
+                        <ImageView
+                            android:id="@+id/im_product"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" />
+
+                        <TextView
+                            android:id="@+id/tx_count"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/h28"
+                            android:layout_marginTop="@dimen/h28"
+                            android:background="@mipmap/bg_syztfs"
+                            android:gravity="center"
+                            android:text="66份"
+                            android:textColor="@color/txt_22"
+                            android:textSize="14dp"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/tx_finish_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/h10"
+                            android:background="@drawable/bg_jssjd"
+                            android:drawableLeft="@drawable/ic_time"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="距离结束:06:40:20"
+                            android:textColor="@color/txt_ff"
+                            android:textSize="@dimen/sp14"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tx_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/h13"
+                            android:text="补水面膜"
+                            android:textColor="@color/txt_22"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/tx_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tx_name"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/h13"
+                            android:textColor="@color/c_9b9580"
+                            android:textSize="13dp" />
+
+                        <me.codeboy.android.aligntextview.AlignTextView
+                            android:id="@+id/tx_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tx_price"
+                            android:layout_marginLeft="@dimen/w30"
+                            android:layout_marginRight="@dimen/w30"
+                            android:layout_marginTop="@dimen/h23"
+                            android:lineSpacingExtra="@dimen/h10"
+                            android:textColor="@color/c_666666"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/w30"
+                        android:layout_marginRight="@dimen/w30"
+                        android:layout_marginTop="@dimen/h15"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tx_current_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/c_999999"
+                            android:textSize="12dp" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="@dimen/h12"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/w10"
+                            android:background="@color/c_999999" />
+
+                        <TextView
+                            android:id="@+id/tx_current_peoper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/h10"
+                            android:textColor="@color/c_999999"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/h10"
+                        android:layout_marginTop="@dimen/h20"
+                        android:background="@color/f6" />
+                </LinearLayout>
+
+                <com.crv.ole.shopping.ui.ProductListView
+                    android:id="@+id/trial_report_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@android:color/transparent"
+                    android:visibility="gone"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+</LinearLayout>

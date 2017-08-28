@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/search_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/txt_ff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/cancel"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@id/search_cancel"
+            android:background="@drawable/search_bar"
+            android:drawableLeft="@drawable/search_fl"
+            android:drawablePadding="10dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:hint="搜索商品"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:imeActionLabel="搜索"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColor="#222222"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dbdbdb" />
+
+    </RelativeLayout>
+
+
+    <com.crv.sdk.HeadView.StickyGridHeadersGridView
+        android:id="@+id/search_gridview"
+        android:layout_marginTop="@dimen/h17"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:layout_marginLeft="@dimen/w20"
+        android:layout_marginRight="@dimen/w12"
+        android:clipToPadding="false"
+        android:columnWidth="40dp"
+        android:horizontalSpacing="@dimen/h10"
+        android:numColumns="4"
+        android:verticalSpacing="@dimen/h10">
+    </com.crv.sdk.HeadView.StickyGridHeadersGridView>
+
+</LinearLayout>

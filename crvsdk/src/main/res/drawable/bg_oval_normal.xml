@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:state_enabled="true">
+        <shape android:shape="oval">
+
+            <!-- 填充的颜色 @color/bg_white -->
+            <solid android:color="#535354"/>
+            <stroke android:width="0dp" android:color="#535354"/>
+            <size android:width="10dp"
+                  android:height="10dp" />
+        </shape>
+    </item>
+
+
+
+
+</selector>

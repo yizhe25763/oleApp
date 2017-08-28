@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gift_card_bg">
+
+    <ImageView
+        android:id="@+id/gift_card_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/h15"
+        android:layout_marginLeft="@dimen/w20"
+        android:layout_marginRight="@dimen/w20"
+        android:layout_marginTop="@dimen/h15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h120"
+        android:layout_alignParentBottom="true"
+        android:background="#F0FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/w20"
+        android:paddingRight="@dimen/w20">
+
+        <TextView
+            android:id="@+id/gift_card_item_ye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="余额"
+            android:textColor="@color/c_222222"
+            android:textSize="@dimen/sp18" />
+
+        <RelativeLayout
+            android:id="@+id/gift_card_item_edit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_qdk">
+
+            <TextView
+                android:id="@+id/gift_card_item_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/w10"
+                android:text="确定"
+                android:textColor="@color/c_222222"
+                android:textSize="@dimen/sp18" />
+
+            <EditText
+                android:id="@+id/gift_card_item_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/h10"
+                android:layout_toLeftOf="@+id/gift_card_item_confirm"
+                android:background="@color/transparent"
+                android:hint="输入密码"
+                android:maxLines="1"
+                android:textSize="@dimen/sp16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/gift_card_item_edit_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_qdk">
+
+            <TextView
+                android:id="@+id/gift_card_item_confirm2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/w10"
+                android:text="确定"
+                android:textColor="@color/c_222222"
+                android:textSize="@dimen/sp18" />
+
+            <EditText
+                android:id="@+id/gift_card_item_et2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/h10"
+                android:layout_toLeftOf="@+id/gift_card_item_confirm2"
+                android:background="@color/transparent"
+                android:hint="输入金额"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textSize="@dimen/sp16" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/w80"
+    android:minHeight="@dimen/w80"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/w20"
+    android:paddingRight="@dimen/w20">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/w15"
+        android:text="购买"
+        android:textColor="@color/c_222222"
+        android:textSize="@dimen/sp16" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="@dimen/w10"
+        android:text="2016-7-12"
+        android:textColor="@color/c_666666"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:id="@+id/jifen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="+8"
+        android:textColor="@color/d_d9be64"
+        android:textSize="@dimen/sp20" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c_979797" />
+</RelativeLayout>

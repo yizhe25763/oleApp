@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.crv.ole.shopping.ui.VerticalScrollView
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 轮播图片 & 促销时间-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.crv.ole.shopping.image.WheelView
+                android:id="@+id/product_images"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/w180"
+                android:adjustViewBounds="true"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                app:intervalTime="4"
+                app:isNeedPoint="true"
+                app:pointImage="@drawable/sk_b"
+                app:pointedImage="@drawable/sk_h"/>
+
+            <TextView
+                android:id="@+id/product_presellMsgTv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/w40"
+                android:gravity="center"
+                android:text="XXXX主题购 仅剩06:40:20"
+                android:textSize="@dimen/sp14"
+                android:textColor="@color/txt_ff"
+                android:background="@color/d_d7d3c5"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+
+        <!-- 价格 & 标签 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/w15"
+            android:orientation="vertical">
+
+            <!-- 商品名称 -->
+            <TextView
+                android:id="@+id/product_nameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="THE FACE SHOP菲诗小铺深层清洁洁面乳170ml"
+                android:textSize="@dimen/sp18"
+                android:textColor="@color/c_222222"/>
+
+            <!-- 现价 & 会员价 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w15"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/product_priceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="￥39.9"
+                    android:textSize="@dimen/w20"
+                    android:textColor="@color/c_222222"/>
+
+                <RelativeLayout
+                    android:id="@+id/product_myPrice_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/product_myPriceTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:layout_marginLeft="@dimen/w10"
+                        android:text="￥36"
+                        android:textSize="@dimen/sp16"
+                        android:textColor="@color/d_d9be64"/>
+                    <ImageView
+                        android:id="@+id/product_myPriceTagIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_v1"
+                        android:layout_toRightOf="@+id/product_myPriceTv" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- 原价 -->
+            <TextView
+                android:id="@+id/product_primePriceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w10"
+                android:text="原价 50.00"
+                android:textSize="@dimen/w12"
+                android:textColor="@color/c_666666"
+                android:visibility="gone"/>
+
+            <!-- 各等级会员价 -->
+            <LinearLayout
+                android:id="@+id/product_vipPrice_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w15"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w1"
+                    android:background="@color/b_b6b6b6"/>
+
+                <TextView
+                    android:id="@+id/product_v1PriceTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w40"
+                    android:gravity="center_vertical"
+                    android:text="V1会员价 58.00"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/c_9B9580"/>
+
+                <View
+                    android:id="@+id/product_v1Price_lineTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w2"
+                    android:background="@drawable/xuxian_style" />
+
+                <TextView
+                    android:id="@+id/product_v2PriceTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w40"
+                    android:gravity="center_vertical"
+                    android:text="V2会员价 50.00"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/c_9B9580"/>
+
+                <View
+                    android:id="@+id/product_v2Price_lineTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w2"
+                    android:background="@drawable/xuxian_style" />
+
+                <TextView
+                    android:id="@+id/product_v3PriceTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w40"
+                    android:gravity="center_vertical"
+                    android:text="V3会员价 45.00"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/c_9B9580"/>
+
+                <View
+                    android:id="@+id/product_v3Price_lineTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w2"
+                    android:background="@drawable/xuxian_style" />
+
+            </LinearLayout>
+
+            <!-- 标签 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w20"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/product_v3_98Iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/w15"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/v3_98"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/w20"
+                    android:text="#夏日清凉"
+                    android:textSize="@dimen/sp14"
+                    android:textColor="@color/c_666666"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/w20"
+                    android:text="#控油去屑"
+                    android:textSize="@dimen/sp14"
+                    android:textColor="@color/c_666666"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/w20"
+                    android:text="#持久清香"
+                    android:textSize="@dimen/sp14"
+                    android:textColor="@color/c_666666"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w1"
+            android:background="@color/b_b6b6b6"/>
+
+        <!-- 满包邮 & 7天退款字样 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w40"
+            android:paddingLeft="@dimen/w15"
+            android:paddingRight="@dimen/w15"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_zcsp_by"
+                android:text="满88元包邮"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/c_666666" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w35"
+                android:drawableLeft="@drawable/ic_zcsp_th"
+                android:text="支持7天无理由退款"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/c_666666" />
+        </LinearLayout>
+
+        <!-- 产品参数 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/w15"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/w5"
+                android:paddingBottom="@dimen/w5"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="@dimen/w70"
+                        android:layout_height="wrap_content"
+                        android:text="品牌国"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="@color/c_222222"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="韩国"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="@color/c_666666"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="@dimen/w70"
+                        android:layout_height="wrap_content"
+                        android:text="产地名称"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="@color/c_222222"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="深圳"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="@color/c_666666"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/w5"
+                android:paddingBottom="@dimen/w5"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="@dimen/w70"
+                        android:layout_height="wrap_content"
+                        android:text="销售单位"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="@color/c_222222"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6个"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="@color/c_666666"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="@dimen/w70"
+                        android:layout_height="wrap_content"
+                        android:text="保质期"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="@color/c_222222"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15~30天"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="@color/c_666666"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/w5"
+                android:paddingBottom="@dimen/w5"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="@dimen/w70"
+                        android:layout_height="wrap_content"
+                        android:text="规格"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="@color/c_222222"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50~60g/个"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="@color/c_666666"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="@dimen/w70"
+                        android:layout_height="wrap_content"
+                        android:text="温控"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="@color/c_222222"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="常温"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="@color/c_666666"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 下拉查看 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#fafafa"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="#ddd"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="继续拖动，查看图文详情"
+                android:textColor="#777"
+                android:textSize="13sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="#ddd"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.crv.ole.shopping.ui.VerticalScrollView>

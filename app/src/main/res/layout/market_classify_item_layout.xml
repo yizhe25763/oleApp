@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/w15"
+    android:paddingRight="@dimen/w15">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w1"
+        android:background="@color/d_dbdbdb"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w120"
+        android:layout_marginTop="@dimen/w10">
+        <ImageView
+            android:id="@+id/classify_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_banner_1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/w20"
+            android:background="@drawable/classify_arrow_selector"/>
+        <TextView
+            android:id="@+id/classify_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:text="以爱之名"
+            android:textSize="@dimen/sp18"
+            android:textStyle="bold"
+            android:textColor="@color/classify_text_selector"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/classify_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/w20"
+        android:paddingBottom="@dimen/w10"
+        android:orientation="vertical"/>
+
+</LinearLayout>

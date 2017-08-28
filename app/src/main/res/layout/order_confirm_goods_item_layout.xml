@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp">
+
+    <ImageView
+        android:id="@+id/order_confirm_goods_img"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/bg_zpbjd"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/order_confirm_goods_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/h20"
+        android:text="2"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/order_confirm_goods_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/order_confirm_goods_img"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/order_confirm_goods_count"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/order_confirm_goods_img"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="产品标题产品标题产品标题产品标题产品标题"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/order_confirm_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/order_confirm_goods_title"
+        android:layout_below="@+id/order_confirm_goods_title"
+        android:layout_marginTop="@dimen/h20"
+        android:text="￥120.00"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.crv.ole.personalcenter.activity.TrialReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:id="@+id/linearLayout"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_layout" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <EditText
+                    android:id="@+id/wordContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/transparent"
+                    android:hint="#一句话试用总结#(15个字数)"
+                    android:maxLength="15"
+                    android:paddingTop="33dp"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layerType="software"
+                    android:background="@drawable/bg_dotted_line" />
+
+                <EditText
+                    android:id="@+id/moodWords"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@color/transparent"
+                    android:gravity="top"
+                    android:hint="收到时的心情"
+                    android:paddingTop="13dp"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layerType="software"
+                    android:background="@drawable/bg_dotted_line" />
+
+                <EditText
+                    android:id="@+id/feelingWords"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@color/transparent"
+                    android:gravity="top"
+                    android:hint="该商品的XXX感如何"
+                    android:paddingTop="13dp"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layerType="software"
+                    android:background="@drawable/bg_dotted_line" />
+
+                <EditText
+                    android:id="@+id/compareWords"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@color/transparent"
+                    android:gravity="top"
+                    android:hint="和你用过的商品相比较"
+                    android:paddingTop="13dp"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layerType="software"
+                    android:background="@drawable/bg_dotted_line" />
+
+                <EditText
+                    android:id="@+id/freeWords"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@color/transparent"
+                    android:gravity="top"
+                    android:hint="自由发言"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layerType="software"
+                    android:background="@drawable/bg_dotted_line" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

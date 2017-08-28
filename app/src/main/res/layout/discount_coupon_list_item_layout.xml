@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/discount_coupon_item_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/discount_coupon_list_item_content_bg"
+        android:paddingBottom="@dimen/h15"
+        android:paddingLeft="@dimen/w18"
+        android:paddingRight="@dimen/w18"
+        android:paddingTop="@dimen/h15">
+
+        <TextView
+            android:id="@+id/discount_coupon_item_amount_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/h10"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="@dimen/h15"
+            android:text="500"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/renminbi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/discount_coupon_item_amount_txt"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="8dp"
+            android:text="￥"
+            android:textColor="#ffffffff"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/discount_coupon_item_desc_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/discount_coupon_item_amount_txt"
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:text="满1000减100"
+            android:textColor="@color/c_f6f6f6"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/discount_coupon_item_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/discount_coupon_item_desc_txt"
+            android:layout_alignParentRight="true"
+            android:maxLines="1"
+            android:text="适用于买生鲜食品"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/discount_coupon_list_item_bottom_bg"
+        android:gravity="center_vertical"
+        android:padding="@dimen/h15">
+
+        <TextView
+            android:id="@+id/discount_coupon_item_time_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="2017-09-07到期"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/discount_coupon_item_use_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="立即使用"
+            android:textColor="@color/c_d9be64"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

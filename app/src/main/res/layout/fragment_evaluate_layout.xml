@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.crv.ole.shopping.ui.ProductListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/noEvaData_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/w60"
+        android:gravity="center"
+        android:text="该商品还没有评论"
+        android:textSize="@dimen/w16"
+        android:textColor="@color/b_b5b5b5"
+        android:visibility="gone"/>
+
+</FrameLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="你有1张优惠卷领取"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imageView01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/bg_yzbg" />
+
+        <ImageView
+            android:id="@+id/imageView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="100dp"
+            android:src="@mipmap/bg_yhqbj" />
+
+        <TextView
+            android:id="@+id/tvRenMinBi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="130dp"
+            android:text="￥"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="115dp"
+            android:layout_toRightOf="@id/tvRenMinBi"
+            android:paddingLeft="5dp"
+            android:text="500"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvRule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tvRenMinBi"
+            android:layout_below="@id/tvRenMinBi"
+            android:layout_marginTop="10dp"
+            android:text="满100送100"
+            android:textColor="#f6f6f6"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tvRenMinBi"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="9dp"
+            android:text="适应于买生鲜食品"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="187dp"
+            android:text="2017-11-09到期"
+            android:textColor="#666666"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/bg_qfch"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnReceive"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_dialog2"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="立即领取"
+        android:textColor="#222222"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_dialog2"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="立即登录"
+        android:textColor="#222222"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivCancel"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/nick_delete_button_selector" />
+
+</LinearLayout>

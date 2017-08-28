@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_ole_title" />
+
+    <Button
+        android:id="@+id/card_active"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w50"
+        android:layout_alignParentBottom="true"
+        android:text="@string/vipCard_activeHRT"
+        android:textColor="@color/activecard_txt_selector"
+        android:background="@drawable/btn_hsdan"
+        android:visibility="gone"/>
+
+    <!-- 会员卡信息 - 固定在页面上的 -->
+    <RelativeLayout
+        android:id="@+id/card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w250"
+        android:layout_below="@+id/title_layout"
+        android:background="@color/c_f6f6f6">
+
+        <ImageView
+            android:id="@+id/card_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:background="@drawable/bg_olek" />
+
+        <TextView
+            android:id="@+id/card_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/card_img"
+            android:layout_alignBottom="@+id/card_img"
+            android:layout_marginBottom="@dimen/w20"
+            android:layout_marginRight="@dimen/w10"
+            tools:text="NO.123456"
+            android:textColor="@color/txt_ff"
+            android:textSize="@dimen/sp14"/>
+
+        <TextView
+            android:id="@+id/card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/card_num"
+            android:layout_above="@+id/card_num"
+            android:layout_marginBottom="@dimen/w5"
+            tools:text="优享会员"
+            android:textColor="@color/txt_ff"
+            android:textSize="@dimen/sp16"/>
+    </RelativeLayout>
+
+    <com.crv.ole.personalcenter.ui.ObservableScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:layout_above="@+id/card_active" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w250"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:background="@color/txt_ff">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w50"
+                    android:layout_below="@+id/card_layout"
+                    android:gravity="center"
+                    android:text="@string/vipCard_vipCode"
+                    android:textColor="@color/c_666666"
+                    android:textSize="@dimen/sp16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w1"
+                    android:layout_marginLeft="@dimen/w30"
+                    android:layout_marginRight="@dimen/w30"
+                    android:background="@color/d_dbdbdb"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w150"
+                    android:layout_below="@+id/title_layout"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/w200"
+                        android:layout_height="@dimen/w150"
+                        android:src="@drawable/item_code_pic" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w50"
+                    android:layout_below="@+id/card_layout"
+                    android:gravity="center"
+                    android:text="@string/vipCard_right"
+                    android:textColor="@color/c_666666"
+                    android:textSize="@dimen/sp16"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w1"
+                    android:layout_marginLeft="@dimen/w30"
+                    android:layout_marginRight="@dimen/w30"
+                    android:background="@color/d_dbdbdb"/>
+
+                <com.flyco.tablayout.CommonTabLayout
+                    android:id="@+id/card_tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w50"
+                    android:padding="@dimen/w8"
+                    app:tl_iconVisible="false"
+                    app:tl_indicator_color="@color/d_d9be64"
+                    app:tl_indicator_corner_radius="8dp"
+                    app:tl_indicator_width="@dimen/w70"
+                    app:tl_indicator_margin_bottom="@dimen/w6"
+                    app:tl_tab_padding="1dp"
+                    app:tl_textSelectColor="@color/d_d9be64"
+                    app:tl_textUnselectColor="@color/txt_22"
+                    app:tl_textsize="@dimen/sp16"
+                    app:tl_underline_color="@color/transparent"
+                    app:tl_underline_height="0dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w10"
+                    android:background="@color/c_f6f6f6"/>
+
+                <!--会籍门槛-->
+                <LinearLayout
+                    android:id="@+id/card_hjmk_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w45"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/w15"
+                        android:text="会籍门槛"
+                        android:textColor="@color/c_222222"
+                        android:textSize="@dimen/sp16" />
+                    <ImageView
+                        android:id="@+id/card_hjmk_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/w10"
+                        android:background="@drawable/down_arrow_selector"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w1"
+                    android:background="@color/d_dadada"/>
+
+                <ImageView
+                    android:id="@+id/card_hjmk_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_cxhy_hjmk" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w10"
+                    android:background="@color/c_f6f6f6"/>
+
+                <!--会员升降级-->
+                <LinearLayout
+                    android:id="@+id/card_hysjj_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w45"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/w15"
+                        android:text="会员升降级"
+                        android:textColor="@color/c_222222"
+                        android:textSize="@dimen/sp16" />
+                    <ImageView
+                        android:id="@+id/card_hysjj_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/w10"
+                        android:background="@drawable/down_arrow_selector"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w1"
+                    android:background="@color/d_dadada"/>
+
+                <ImageView
+                    android:id="@+id/card_hysjj_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_cxhy_hysjj" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w10"
+                    android:background="@color/c_f6f6f6"/>
+
+                <!--会员权益-->
+                <LinearLayout
+                    android:id="@+id/card_hyqy_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w45"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/w15"
+                        android:text="会员权益"
+                        android:textColor="@color/c_222222"
+                        android:textSize="@dimen/sp16" />
+                    <ImageView
+                        android:id="@+id/card_hyqy_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/w10"
+                        android:background="@drawable/down_arrow_selector"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w1"
+                    android:background="@color/d_dadada"/>
+
+                <ImageView
+                    android:id="@+id/card_hyqy_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_cxhy_hyqy" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w10"
+                    android:background="@color/c_f6f6f6"/>
+
+                <!--更多-->
+                <LinearLayout
+                    android:id="@+id/card_gd_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w45"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/w15"
+                        android:text="更多由联盟合作商户提供的会员权益和服务"
+                        android:textColor="@color/c_222222"
+                        android:textSize="@dimen/sp16" />
+                    <ImageView
+                        android:id="@+id/card_gd_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/w10"
+                        android:background="@drawable/right_arrow_selector"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w1"
+                    android:background="@color/d_dadada"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.crv.ole.personalcenter.ui.ObservableScrollView>
+
+    <!--固定在顶部的tab-->
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/card_tabTop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w50"
+        android:layout_below="@+id/title_layout"
+        android:padding="@dimen/w8"
+        android:visibility="invisible"
+        app:tl_iconVisible="false"
+        app:tl_indicator_color="@color/d_d9be64"
+        app:tl_indicator_corner_radius="8dp"
+        app:tl_indicator_width="@dimen/w70"
+        app:tl_indicator_margin_bottom="@dimen/w6"
+        app:tl_tab_padding="1dp"
+        app:tl_textSelectColor="@color/d_d9be64"
+        app:tl_textUnselectColor="@color/txt_22"
+        app:tl_textsize="@dimen/sp16"
+        app:tl_underline_color="@color/transparent"
+        app:tl_underline_height="0dp"
+        android:background="@color/txt_ff"/>
+    <View
+        android:id="@+id/card_tabTop_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w10"
+        android:layout_below="@+id/card_tabTop_layout"
+        android:background="@color/c_f6f6f6"
+        android:visibility="gone"/>
+
+</RelativeLayout>

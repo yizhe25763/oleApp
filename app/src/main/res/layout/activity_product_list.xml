@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.crv.ole.shopping.activity.ProductListActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <include layout="@layout/search_bar" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_bottom_frame"
+            app:layout_collapseMode="pin"
+            app:tabBackground="@color/transparent"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#222222"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            app:tabTextColor="#666666" />
+    </android.support.design.widget.AppBarLayout>
+
+    <com.handmark.pulltorefresh.library.extras.recyclerview.PullToRefreshRecyclerView
+        android:id="@+id/pull_to_refresh_recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        ptr:ptrMode="both" />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f6f6f6">
+
+    <RelativeLayout
+        android:id="@+id/classify_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w50"
+        android:orientation="horizontal"
+        android:background="@color/txt_ff">
+
+        <TextView
+            android:id="@+id/classify_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w15"
+            android:layout_marginRight="@dimen/w15"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/cancel"
+            android:textSize="@dimen/sp16"/>
+
+        <TextView
+            android:id="@+id/classify_inputTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w20"
+            android:paddingLeft="@dimen/w40"
+            android:paddingRight="@dimen/w8"
+            android:paddingTop="@dimen/w6"
+            android:paddingBottom="@dimen/w6"
+            android:hint="搜索商品"
+            android:text=""
+            android:textColor="@color/c_666666"
+            android:textSize="@dimen/sp16"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:imeActionLabel="搜索"
+            android:layout_toLeftOf="@+id/classify_cancel"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_bar" />
+
+        <RelativeLayout
+            android:id="@+id/classify_img"
+            android:layout_width="@dimen/w40"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/classify_inputTv">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/search_fl"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w1"
+            android:layout_alignParentBottom="true"
+            android:background="@color/d_d5d5d5"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/classify_titleTv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w50"
+        android:layout_below="@+id/classify_title_layout"
+        android:layout_marginTop="@dimen/w10"
+        android:gravity="center"
+        android:text="分类"
+        android:textSize="@dimen/sp18"
+        android:textColor="@color/c_222222"
+        android:background="@color/txt_ff"/>
+
+    <ListView
+        android:id="@+id/classify_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/classify_titleTv"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:background="@color/txt_ff"/>
+</RelativeLayout>

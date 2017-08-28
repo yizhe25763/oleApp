@@ -1,0 +1,335 @@
+<resources>
+    <string name="app_name">Olelifestyle</string>
+    <!--网络请求加载-->
+    <string name="logining">正在登录,请稍后&#8230;</string>
+    <string name="loading">正在努力加载&#8230;</string>
+    <string name="submiting">正在提交,请稍后&#8230;</string>
+    <string name="initing">正在初始化数据&#8230;</string>
+    <string name="network_error">网络异常,请检查网络设置</string>
+    <!--上传头像-->
+    <string name="uploading">正在上传,请稍后&#8230;</string>
+
+    <string name="tab_home_page">首页</string>
+    <string name="tab_market_page">超市</string>
+    <string name="tab_find_page">态度</string>
+    <string name="tab_user_page">我的</string>
+    <string name="tab_myewj_sth">个人</string>
+    <string name="tab_shopping_cart">服务</string>
+    <string name="tab_channer">咨询</string>
+
+    <string name="home_market_tab_1">试用</string>
+    <string name="home_market_tab_2">好物</string>
+    <string name="home_market_tab_3">试用</string>
+    <string name="home_market_tab_4">分类</string>
+
+    <string name="market_hw_tab_1">好物详情</string>
+    <string name="market_hw_tab_2">好物列表</string>
+
+    <string name="home_find_tab_1">杂志</string>
+    <string name="home_find_tab_2">文章</string>
+
+    <string name="home_mzjx_txt">每周精选</string>
+    <string name="home_xsqg_txt">限时抢购</string>
+    <string name="home_yxys_txt">有限预售</string>
+    <string name="home_bfhy_txt">缤纷会员</string>
+
+    <!--商品详情相关 -->
+    <string name="product_detail_title">商品详情</string>
+    <string name="product_detail_tab_1">商品</string>
+    <string name="product_detail_tab_2">详情</string>
+    <string name="product_detail_tab_3">试用</string>
+    <string name="product_detail_tab_4">评价</string>
+    <string name="trial_report_product_list_title">评测</string>
+
+    <!-- 个人中心 -->
+    <!-- 消息中心相关 -->
+    <string name="msg_title">消息中心</string>
+    <string name="logistics_helper_title">物流助手</string>
+    <string name="live_warn_title">直播提醒</string>
+    <string name="shopping_helper_title">购物助手</string>
+    <!-- 优惠券相关 -->
+    <string name="discount_coupon_title">优惠券</string>
+    <string name="discount_coupon_history_title">历史优惠券</string>
+    <string name="discount_coupon_used_title">已使用</string>
+    <string name="discount_coupon_expired_title">已过期</string>
+    <!-- 设置 -->
+    <string name="inputDigits">.0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="set_title">设置</string>
+    <string name="set_third_item">第三方账户绑定</string>
+    <string name="set_clear_item">清除缓存</string>
+    <string name="set_about_item">关于Ole</string>
+    <string name="set_exitLogin">退出登录</string>
+    <string name="set_pwd_rule">密码由6~20位字符组成,必须包含数字和字母</string>
+    <string name="set_third_unbind">未绑定</string>
+    <string name="set_third_wx">绑定微信</string>
+    <string name="set_third_wb">绑定微博</string>
+    <string name="set_third_qq">绑定QQ</string>
+    <string name="clearCache">确定清除缓存吗？</string>
+    <string name="version_title">版本信息</string>
+    <!-- 会员卡相关 -->
+    <string name="vipCard_title">会员卡</string>
+    <string name="vipCard_unbind">解绑</string>
+    <string name="vipCard_activeHRT">华润通激活</string>
+    <string name="vipCard_active">激活</string>
+    <string name="vipCard_readAccept">我已阅读并同意</string>
+    <string name="vipCard_activeBind">开卡和绑定</string>
+    <string name="vipCard_cxVip">畅享会员</string>
+    <string name="vipCard_yxVip">优享会员</string>
+    <string name="vipCard_zxVip">尊享会员</string>
+    <string name="vipCard_vipCode">会员码</string>
+    <string name="vipCard_bindVip">绑定会员卡</string>
+    <string name="vipCard_bind">绑定</string>
+    <string name="vipCard_name_hint">请输入姓名</string>
+    <string name="vipCard_card_hint">请输入身份证</string>
+    <string name="vipCard_gainCode">获取验证码</string>
+    <string name="vipCard_right">权益</string>
+    <!-- 积分 -->
+    <string name="point_title">积分</string>
+    <!-- 我的收藏 -->
+    <string name="myColl_title">我的收藏</string>
+    <string name="myColl_news">资讯</string>
+    <string name="myColl_goods">商品</string>
+    <string name="collectionTo_txt">收藏到</string>
+    <string name="collection_edit_txt">编辑</string>
+    <string name="collection_add_folder_title">新建文件夹</string>
+    <string name="collection_edit_folder_title">编辑文件夹</string>
+    <string name="collection_add_folder_delete_txt">删除</string>
+    <!-- 帮助与反馈 -->
+    <string name="help_title">帮助与反馈</string>
+    <string name="help_call">欢迎致电</string>
+    <string name="help_words">欢迎留言</string>
+    <string name="help_words_title">留言</string>
+    <string name="help_vip">会员</string>
+    <string name="help_account">账户管理</string>
+    <string name="help_level">等级权益</string>
+    <string name="help_jifen">积分活动</string>
+    <string name="help_buy">购买</string>
+    <string name="help_deal">交易条款</string>
+    <string name="help_operate">操作指南</string>
+    <string name="help_buyFlow">购买流程</string>
+    <string name="help_report">举报</string>
+    <string name="help_order">订单</string>
+    <string name="help_orderQuery">订单查询</string>
+    <string name="help_orderCancel">订单取消</string>
+    <string name="help_explain">发货说明</string>
+    <string name="help_billQuestion">发票问题</string>
+    <string name="help_hint">如果您还有疑问，欢迎致电客服或留言</string>
+    <string name="help_serviceTime">服务时间 8:30-21:30</string>
+    <string name="help_submit">提交</string>
+    <!-- 我的订单 -->
+    <string name="myOrder_title">我的订单</string>
+    <string name="myOrder_allOrder">全部</string>
+    <string name="myOrder_forPay">待付款</string>
+    <string name="myOrder_forSend">待发货</string>
+    <string name="myOrder_forGain">待签收</string>
+    <string name="myOrder_forEval">待评价</string>
+    <string name="myOrder_service">退款/售后</string>
+
+    <string name="myOrder_totle" formatted="false">共计%1s件商品 合计￥%2s（含运费 ￥10.00）</string>
+    <string name="order_num">订单编号:</string>
+    <!-- 个人中心 -->
+
+    <!-- 确认订单相关 -->
+    <string name="confirm_order_title">确认订单</string>
+    <string name="choose_discount_coupon_title">使用优惠券</string>
+    <string name="choose_gift_card_title">选择礼品卡</string>
+    <string name="choose_pay_zfb">支付宝</string>
+    <string name="choose_pay_yl">银联</string>
+    <string name="choose_pay_go">去支付</string>
+    <string name="choose_pay_type">选择支付方式</string>
+    <string name="choose_pay_amount">应支付金额</string>
+    <string name="choose_pay_cancel_msg">确定离开吗？订单只保留二十分钟支付时间哦~</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username_hint">手机号/邮箱</string>
+    <string name="quick_login">快捷登录</string>
+    <string name="forget_passwordk">忘记密码</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="other_login_title">使用以下方式登录</string>
+    <string name="phone_hint">请输入手机号</string>
+    <string name="auth_code_btn">获取验证码</string>
+    <string name="auth_code_hint">请输入验证码</string>
+    <string name="phone_login_title">快捷登录</string>
+    <string name="next_btn">下一步</string>
+    <string name="retrieve_password_title">找回密码</string>
+    <string name="password_title">设置密码</string>
+    <string name="finish">完成</string>
+    <string name="pasword_hint">请输入密码</string>
+    <string name="password_config">请再次输入密码</string>
+    <string name="regist_title">会员注册</string>
+    <string name="regist_sir">男士</string>
+    <string name="regist_mr">女士</string>
+    <string name="regist_name">*姓名</string>
+    <string name="regist_cardNum">身份证号</string>
+    <string name="regist_area">*所在地区</string>
+    <string name="regist_shopAlways">*最常购物门店</string>
+    <string name="regist_address">详细地址</string>
+
+    <string name="wx_app_installed_hint">微信客户端未安装，请确认</string>
+    <string name="pay_cancel_hint">支付已取消</string>
+    <string name="pay_fail_hint">支付失败</string>
+    <string name="pay_success_hint">支付成功</string>
+
+    <string name="pay_state_success">恭喜你，支付成功！</string>
+    <string name="pay_state_failed">支付失败</string>
+    <string name="pay_state_cancle">支付取消</string>
+    <string name="back_to_shop">返回商城</string>
+    <string name="back_to_home">返回首页</string>
+    <string name="back_to_order">(%1s) 秒后返回订单列表，请重新支付。</string>
+    <string name="back_to_order_end">返回订单列表，重新支付。</string>
+
+    <!-- 第三方分享登录 -->
+    <string name="transfer_ok">分享成功</string>
+    <string name="transfer_fail">分享失败</string>
+    <string name="transfer_canceled">分享被取消</string>
+    <string name="transfer_off_ok">已注销</string>
+    <string name="user_weixin_login">微信</string>
+    <string name="user_qq_weibo_login">QQ</string>
+    <string name="auth_success">登录成功</string>
+    <string name="auth_cancel">登录取消</string>
+    <string name="auth_fail">登录失败</string>
+    <string name="auth_fail_cos_service">服务器异常</string>
+    <string name="btnAuthorization">登录</string>
+    <string name="zx_transfer_off">注销</string>
+    <string name="zx_transfer_dialog_loading">加载中...</string>
+    <string name="zx_transfer_send">分享</string>
+    <string name="zx_transfer_sending">分享中...</string>
+    <string name="stay_evaluate">待评价</string>
+    <string name="evaluate">发表评价</string>
+    <string name="confirm">确定</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_cancel">取消</string>
+
+    <!-- 微信分享 -->
+    <string name="share_to_sina">新浪微博</string>
+    <string name="share_to_wx_friend">微信好友</string>
+    <string name="share_to_wx_moment11">朋友圈</string>
+    <string name="share_to_copy_link">复制链接</string>
+    <string name="share_to_has_copy_link">已复制到剪切板</string>
+    <string name="share_to_succ">分享成功</string>
+    <string name="share_to_fail">分享失败</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_failed">发送失败</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="title_activity_edit_goods_address">EditGoodsAddressActivity</string>
+    <string name="title_activity_hw_detail">HwDetailActivity</string>
+    <!---->
+
+    <!--分类-->
+    <string name="sort_all">综合排序</string>
+    <string name="sort_sell">销量排序</string>
+    <string name="sort_price_low">价格最低</string>
+    <string name="sort_price_hight">价格最高</string>
+    <string name="classfiy_all">选择分类</string>
+    <string name="goods_list">商品列表</string>
+    <string name="waiting">请稍等...</string>
+    <string name="add_cart_success">添加购物车成功</string>
+    <string name="add_cart_failed">添加购物车失败</string>
+
+
+    <!--个推推送相关-->
+    <string name="no_clientid">(none)</string>
+    <string name="start">已启动</string>
+    <string name="clientid">clientid&#160;=&#160;</string>
+    <string name="stop">已停止</string>
+    <string name="clear">清除日志</string>
+    <string name="enablelog">开启debug日志</string>
+    <string name="bindcell">绑定手机号</string>
+    <string name="pmsg">透传测试</string>
+    <string name="psmsg">通知栏测试</string>
+    <string name="transmit">透传内容</string>
+    <string name="begin">开始(h)</string>
+    <string name="end">结束</string>
+    <string name="duration">持续时间(h)</string>
+    <string name="set_heartbeat">心跳间隔(s)</string>
+    <string name="send_msg">发送消息</string>
+    <string name="bind_alias">绑定别名</string>
+    <string name="unbind_alias">解绑别名</string>
+    <string name="add_tag">添加标签</string>
+    <string name="add_tag_unknown_exception">设置标签失败，未知异常</string>
+    <string name="add_tag_success">接口调用成功</string>
+    <string name="add_tag_error_count">接口调用失败, tag数量过大, 最大不能超过200个</string>
+    <string name="add_tag_error_frequency">设置标签失败，频率过快</string>
+    <string name="add_tag_error_null">接口调用失败, tag 为空</string>
+    <string name="add_tag_error_repeat">设置标签失败, 标签重复</string>
+    <string name="add_tag_error_unbind">设置标签失败, 服务未初始化成功</string>
+    <string name="add_tag_error_not_online">还未登陆成功</string>
+    <string name="add_tag_error_black_list">该应用已经在黑名单中,请联系售后支持!</string>
+    <string name="add_tag_error_exceed">已存 tag 超过限制</string>
+    <string name="version">版本号</string>
+    <string name="silentime">静默时间</string>
+    <string name="getclientid">获取cid</string>
+    <string name="cancel">取消</string>
+    <string name="exit">退出</string>
+    <string name="mastersecret">mastersecret&#160;=&#160;</string>
+    <string name="show_version">当前sdk版本&#160;=&#160;</string>
+    <string name="show_cid">当前应用的cid&#160;=&#160;</string>
+    <string name="set_silenttime">设置静默时间段</string>
+    <string name="push_notification_title">通知栏测试</string>
+    <string name="push_notification_msg_title">通知栏测试</string>
+    <string name="push_notification_msg_content">您收到一条测试消息,点击访问www.igetui.com！</string>
+    <string name="push_transmission_data">收到一条透传测试消息</string>
+    <string name="network_invalid">对不起，当前网络不可用!</string>
+
+    <!--试用-->
+    <string name="trial_product">试用商品</string>
+    <string name="trial_report">试用报告</string>
+    <string name="apply_trial">申请试用</string>
+    <string name="trial_title">试用专题</string>
+    <string name="trial_dialog_title">抱歉,本次活动只限OLE会员参加</string>
+    <string name="trial_dialog_cancle">知道了</string>
+    <string name="trial_dialog_confim">去开通</string>
+    <string name="trial_process">试用流程</string>
+    <string name="trial_input_addr">请填写地址</string>
+    <string name="trial_input_info">请填您的姓名、电话及地址</string>
+    <string name="trial_applay_tishi">提示：每个用户仅限申请1份试用；成功申请试用但未填写试用体验的用户,将不再参与试用活动的机会，所以不要忘了写试用体验哦！</string>
+    <string name="trial_applay">提交申请</string>
+    <string name="trial_applay_rule_tishi">我已了解Ole试用活动规则，并愿意支付10元快递费用，在试用商品之后反馈试用体验</string>
+
+
+    <string name="home_more_live">更多直播精选</string>
+    <string name="home_more_zt">查看更多专题</string>
+    <string name="home_more_hw">查看更多好物</string>
+    <string name="home_more_sy">查看更多精品试用</string>
+    <string name="applay_trail_title">申请试用</string>
+    <string name="trial_rule">试用规则</string>
+    <string name="applay_type">申请方式</string>
+    <string name="applay_type_info">申请时需提供个人信息及详细收货地址；</string>
+    <string name="get_type">领取方式</string>
+    <string name="get_type_info">申请结束后，系统随机选取对应数量的用户，并发出短信／微信通知，收到通知后24小时内支付10元邮费或使用100积分抵运费，即为申请成功，超过24小时未支付则视为放弃试用；我们将会在您支付邮费后3天内发货</string>
+    <string name="applay_report">填写试用报告</string>
+    <string name="applay_report_info">收到商品后，请如实填写试用体验，进入"Ole微信公众号"->"商城"->"个人"->"精品试用"->"我的申请"->"填写报告"即可填写，试用品无需返还；</string>
+    <string name="trial_more_recorde">查看更多历史记录</string>
+    <string name="trial">精品试用</string>
+    <string name="order_info_title">订单详情</string>
+    <string name="no_trial_report">暂无试用报告</string>
+
+    <string name="please_see_rule">请查看试用规则</string>
+    <string name="price">原价: ¥%1s</string>
+    <string name="count">数量: %1s</string>
+    <string name="peporer">申请人数: %1s</string>
+    <string name="num">%1s份</string>
+
+    <string name="pay_type_jifen">积分</string>
+    <string name="pay_type_online">线上支付</string>
+    <string name="pay_jifen">共需消耗积分%1s</string>
+    <string name="pay">支付</string>
+    <string name="applayed">您已提交申请，请耐心等待审核...</string>
+    <string name="applayed2">已申请，请耐心等待</string>
+    <string name="evalua_order">订单评价</string>
+    <string name="evalua_order_service">评价下服务吧</string>
+    <string name="service_nice">非常满意</string>
+    <string name="service_nomal">基本满意</string>
+    <string name="service_bad">不满意</string>
+    <string name="feedback_hint">欢迎留下宝贵的意见</string>
+    <string name="evlua_product">评论下商品吧</string>
+    <string name="cancle_order_success">取消订单成功</string>
+    <string name="cancle_order_failed">取消订单失败</string>
+    <string name="cancle_order_quest">是否取消订单？</string>
+    <string name="trial_un_pass">很遗憾,您未获取试用资格，感谢参与</string>
+    <string name="trial_pass">审核通过,请于个人中心查看详情</string>
+</resources>

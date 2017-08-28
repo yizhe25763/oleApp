@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/w130">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="@dimen/w15"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/searchItem_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="混搭风格的法国早餐"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/c_666666"/>
+        <TextView
+            android:id="@+id/searchItem_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/w8"
+            android:text="当我们谈论法式早餐时，主要想到的是法式面包"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/c_999999"
+            android:maxLines="2"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/searchItem_img"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_bkdj"/>
+</LinearLayout>

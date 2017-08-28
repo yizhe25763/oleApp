@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/txt_ff"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_ole_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/h19"
+        android:layout_marginLeft="@dimen/w20"
+        android:layout_marginRight="@dimen/w20"
+        android:textSize="16sp"
+        android:text="选择你的兴趣爱好"
+        android:textColor="#222222" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/w20"
+        android:layout_marginRight="@dimen/w20"
+        android:layout_marginTop="@dimen/w19"
+        android:background="@color/d_dbdbdb" />
+
+    <GridView
+        android:id="@+id/hotty_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w15"
+        android:layout_marginRight="@dimen/w15"
+        android:layout_marginTop="@dimen/h17"
+        android:horizontalSpacing="@dimen/w10"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="13dp">
+        ></GridView>
+
+    <Button
+        android:id="@+id/confirm_bt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h40"
+        android:layout_marginLeft="@dimen/w10"
+        android:layout_marginRight="@dimen/w10"
+        android:layout_marginTop="@dimen/h45"
+        android:background="@drawable/confirm_btn_selector"
+        android:text="保存"
+        android:enabled="false"
+        android:textColor="@color/white" />
+
+</LinearLayout>

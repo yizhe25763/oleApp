@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/collection_item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/collection_item_edit_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/collection_edit_ic"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/collection_item_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:gravity="right"
+            android:paddingBottom="@dimen/h5"
+            android:paddingRight="@dimen/w10"
+            android:text="无数人已阅"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+    </FrameLayout>
+</FrameLayout>

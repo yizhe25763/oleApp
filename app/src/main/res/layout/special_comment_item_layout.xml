@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/w20">
+
+    <RelativeLayout
+        android:id="@+id/imgLayout"
+        android:layout_width="@dimen/w50"
+        android:layout_height="@dimen/w60">
+        <ImageView
+            android:id="@+id/comment_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w50"
+            tools:background="@drawable/capture01"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w60"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/comment_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="alan spencer"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/c_666666"/>
+                <TextView
+                    android:id="@+id/comment_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/w8"
+                    tools:text="2017年7月21日"
+                    android:textSize="@dimen/sp13"
+                    android:textColor="@color/c_999999"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/comment_zanLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/w10"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/comment_likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    tools:text="123"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/b_b6b6b6"/>
+                <ImageView
+                    android:id="@+id/comment_zanImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/w5"
+                    android:layout_gravity="top"
+                    android:background="@drawable/btn_ztxq_dz_normal"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/comment_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/w12"
+            tools:text="水果很好吃，非常新鲜。很满意，会再来。"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/c_666666"/>
+
+        <!--商品评价图片布局-->
+        <LinearLayout
+            android:id="@+id/comment_imgs_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w90"
+            android:layout_marginTop="@dimen/w15"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/comment_imgs_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/w10"
+                android:background="@drawable/capture01"
+                android:visibility="gone" />
+            <ImageView
+                android:id="@+id/comment_imgs_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/w10"
+                android:background="@drawable/capture02"
+                android:visibility="gone" />
+            <RelativeLayout
+                android:id="@+id/comment_imgs_3_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone" >
+                <ImageView
+                    android:id="@+id/comment_imgs_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/capture03" />
+                <TextView
+                    android:id="@+id/comment_imgs_3_Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/w10"
+                    android:layout_marginRight="@dimen/w5"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    tools:text="+6"
+                    android:textSize="@dimen/sp18"
+                    android:textColor="@color/txt_ff"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <!--商品试用图片布局-->
+        <LinearLayout
+            android:id="@+id/report_imgs_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w180"
+            android:layout_marginTop="@dimen/w15"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/report_imgs_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginRight="@dimen/w10"
+                tools:background="@drawable/capture01" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/report_imgs_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/w10"
+                    tools:background="@drawable/capture01" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+                    <ImageView
+                        android:id="@+id/report_imgs_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:background="@drawable/capture03" />
+                    <TextView
+                        android:id="@+id/report_imgs_3_Num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/w10"
+                        android:layout_marginRight="@dimen/w5"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        tools:text="+6"
+                        android:textSize="@dimen/sp18"
+                        android:textColor="@color/txt_ff" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/txt_ff"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_ole_title" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_zccg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/w15"
+        android:gravity="center"
+        android:text="您的售后申请已被审核通过！"
+        android:textColor="@color/c_666666"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="请输入运单号"
+        android:textColor="@color/c_666666"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp">
+
+        <TextView
+            android:id="@+id/order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="运单号"
+            android:textColor="@color/c_222222"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/order_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/order_scan" />
+
+        <EditText
+            android:id="@+id/order_id_edt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/order_scan"
+            android:layout_toRightOf="@id/order_id"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:hint="请输入订单号"
+            android:singleLine="true"
+            android:textColor="@color/c_222222"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/d_dbdbdb" />
+
+    <RelativeLayout
+        android:id="@+id/order_wl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/order_wls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="物流商"
+            android:textColor="@color/c_222222"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/order_wl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/order_wl" />
+
+        <TextView
+            android:id="@+id/wl_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/order_wl"
+            android:layout_toRightOf="@id/order_wls"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:hint="物流商"
+            android:singleLine="true"
+            android:textColor="@color/c_222222"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/d_dbdbdb" />
+
+    <TextView
+        android:id="@+id/order_comment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h40"
+        android:layout_marginBottom="@dimen/h10"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/h100"
+        android:background="@drawable/order_comment_button_selector"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/c_ffffff"
+        android:textSize="14sp" />
+</LinearLayout>

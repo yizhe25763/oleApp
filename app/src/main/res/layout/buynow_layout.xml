@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/w20"
+    android:gravity="center_horizontal"
+    android:background="@color/txt_ff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/product_close_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/w10"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:layout_width="@dimen/w25"
+                android:layout_height="@dimen/w25"
+                android:background="@drawable/product_close_selector"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/w60"
+            android:layout_marginTop="@dimen/w25"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_slbj"
+            android:focusableInTouchMode="true" >
+            <RelativeLayout
+                android:id="@+id/product_substract_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/w35">
+                <TextView
+                    android:layout_width="@dimen/w25"
+                    android:layout_height="@dimen/w25"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/product_subtract_selector"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/product_numTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="@dimen/sp24"
+                android:textColor="@color/c_222222"
+                android:background="@color/transparent"/>
+
+            <EditText
+                android:id="@+id/product_numEt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="@dimen/sp24"
+                android:textColor="@color/c_222222"
+                android:inputType="number"
+                android:background="@color/transparent"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/product_add_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/w35">
+                <TextView
+                    android:layout_width="@dimen/w25"
+                    android:layout_height="@dimen/w25"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/product_add_selector"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/w20"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/w8"
+            android:text="合计"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/c_222222"/>
+        <TextView
+            android:id="@+id/product_totalPriceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥308"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/d_d9be64"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w1"
+        android:layout_marginTop="@dimen/w15"
+        android:background="@color/d_dbdbdb"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/w15"
+        android:text="单笔订单满88元可免费配送"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/c_222222"/>
+
+    <Button
+        android:id="@+id/product_accountBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w40"
+        android:layout_marginTop="@dimen/w15"
+        android:layout_marginLeft="@dimen/w20"
+        android:layout_marginRight="@dimen/w20"
+        android:text="结算"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/txt_ff"
+        android:background="@drawable/btn_dlan_normal"/>
+</LinearLayout>

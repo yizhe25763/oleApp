@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlGwcEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:contentDescription="购物车为空的时候"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ivGwcEmpty"
+            android:layout_width="122dp"
+            android:layout_height="122dp"
+            android:src="@drawable/gwc_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivGwcEmpty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="购物车该补货啦"
+            android:textColor="#9b9580"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

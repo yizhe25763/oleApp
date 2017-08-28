@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.crv.ole.demo.activity.TabDemoActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="share"
+        android:text="测试分享"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="login"
+        android:text="测试登录"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/layoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/commonTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#f6f6f6"
+        app:tl_iconGravity="TOP"
+        app:tl_iconHeight="18dp"
+        app:tl_iconMargin="5dp"
+        app:tl_iconWidth="18dp"
+        app:tl_indicator_bounce_enable="false"
+        app:tl_indicator_height="0dp"
+        app:tl_textSelectColor="@color/tab_text_selectd"
+        app:tl_textUnselectColor="@color/tab_text_unselectd"
+        app:tl_textsize="12sp"
+        app:tl_underline_color="@color/bottom_line"
+        app:tl_underline_gravity="TOP"
+        app:tl_underline_height="1dp" />
+</LinearLayout>

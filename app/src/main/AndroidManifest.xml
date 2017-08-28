@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.crv.ole">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- GCM required, remember replace "com.hyphenate.chatuidemo" to your own package -->
+    <!-- iBeancon功能所需权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- 个推3.0电子围栏功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 支持iBeancon 需要蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- 用于获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <!-- 用于写入缓存数据到扩展存储卡 -->
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 富媒体需要声明的权限 -->
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <!-- 适配Android N系统必需的ContentProvider写权限声明，写权限包含应用包名 -->
+    <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.crv.ole" />
+
+    <permission
+        android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.crv.ole"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc.hce" />
+
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+
+    <!-- 友盟分享登录申请权限开始 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 友盟分享登录申请权限结束 -->
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_ole"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".home.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 引导页 -->
+        <activity
+            android:name=".home.activity.TutorialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 主页 -->
+        <activity
+            android:name=".home.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 商城相关页面   start -->
+        <activity
+            android:name=".information.activity.SpecialDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 专题 - 专题详情 - 评论页面 -->
+        <activity
+            android:name=".information.activity.SpecialCommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <!-- 专题 - 搜索页面 -->
+        <activity
+            android:name=".search.activity.FindSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+
+        <!-- 商品详情页 -->
+        <activity
+            android:name=".shopping.activity.ProductDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 商品详情页 — 查看图片 -->
+        <activity
+            android:name=".shopping.activity.LookPicActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 商城相关页面   end -->
+
+
+        <!-- bugly升级begin -->
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent" />
+        <!-- android 7.0读取文件 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <!-- bugly升级end -->
+
+
+        <activity
+            android:name=".information.activity.SpecialDeatail1Activity2"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 登录页面 -->
+        <activity
+            android:name=".login.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginActivityTheme" />
+        <!-- 注册页面 -->
+        <activity
+            android:name=".register.activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 找回密码页面 -->
+        <activity
+            android:name=".login.activity.RetrievePwdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 设置密码页面 -->
+        <activity
+            android:name=".register.activity.PasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 登录 - 注册成功页面 (开卡流程) -->
+        <activity
+            android:name=".register.activity.RegistSuccessActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 登陆 - 注册成功 - 会员注册页面 (开卡流程) -->
+        <activity
+            android:name=".register.activity.VipRegistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 门店列表页面 -->
+        <activity
+            android:name=".register.activity.ShopListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <activity
+            android:name=".register.activity.RegisterSuccessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+
+        <!-- 个人中心 start -->
+        <activity
+            android:name=".personalcenter.activity.CenterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+
+        <!-- 编辑姓名 -->
+        <activity
+            android:name=".personalcenter.activity.EditNickNameActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 编辑爱好 -->
+        <activity
+            android:name=".personalcenter.activity.HottyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 绑定手机及邮箱 -->
+        <activity
+            android:name=".personalcenter.activity.BindMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 发起售后 -->
+        <activity
+            android:name=".personalcenter.activity.AfterSaleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+
+        <!-- 收货地址 -->
+        <activity
+            android:name=".personalcenter.activity.GoodsAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 编辑/新增售货地址 -->
+        <activity
+            android:name=".personalcenter.activity.EditGoodsAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 选择收货地址 -->
+        <activity
+            android:name=".personalcenter.activity.SelectAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 发起售后 物流填写页面 -->
+        <activity
+            android:name=".personalcenter.activity.AfterOrderWLActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 消息中心 -->
+        <activity
+            android:name=".personalcenter.activity.MsgCenterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 物流助手 -->
+        <activity
+            android:name=".personalcenter.activity.LogisticsHelperActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 直播提醒 -->
+        <activity
+            android:name=".personalcenter.activity.LiveWarnActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 优惠券页面 -->
+        <activity
+            android:name=".personalcenter.activity.CouponActivity"
+            android:label="优惠卷"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 历史优惠券页面 -->
+        <!-- 会员卡页面 -->
+        <activity
+            android:name=".personalcenter.activity.VipCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 会员卡 - 会员卡介绍页面 -->
+        <activity
+            android:name=".personalcenter.activity.CardIntroduceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 会员卡 - 华润通激活页面 -->
+        <activity
+            android:name=".personalcenter.activity.ActiveHRTActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 会员卡 - 开卡和绑卡 -->
+        <activity
+            android:name=".personalcenter.activity.ActiveBindActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 会员卡 - 开卡和绑卡 - 选择页 -->
+        <activity
+            android:name=".personalcenter.activity.ActiveBindChooseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 会员卡 - 开卡和绑卡 - 选择页 - 绑定会员卡 -->
+        <activity
+            android:name=".personalcenter.activity.BindVipCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 设置页面 -->
+        <activity
+            android:name=".personalcenter.activity.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+
+        <!-- 杂志页面 -->
+        <activity
+            android:name=".information.activity.ZzActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 设置 - 设置密码页面 -->
+        <activity
+            android:name=".personalcenter.activity.PwdSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 设置 - 第三方账户绑定页面 -->
+        <activity
+            android:name=".personalcenter.activity.ThirdBindActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 设置 - 关于ole页面 -->
+        <activity
+            android:name=".personalcenter.activity.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 积分 -->
+        <activity
+            android:name=".personalcenter.activity.PointActivity"
+            android:label="积分"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 我的收藏页面 -->
+        <activity
+            android:name=".personalcenter.activity.MyCollectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 发起售后成功页面 -->
+        <activity
+            android:name=".personalcenter.activity.AfterSaleSuccessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 我的收藏  添加收藏文件夹页面 -->
+        <activity
+            android:name=".personalcenter.activity.CollectionAddFolderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 我的收藏  资讯列表页面 -->
+        <activity
+            android:name=".personalcenter.activity.CollectionInformationListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 我的收藏  商品列表页面 -->
+        <activity
+            android:name=".personalcenter.activity.CollectionGoodsListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 帮助与反馈页面 -->
+        <activity
+            android:name=".personalcenter.activity.HelpFeedbackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 帮助与反馈 - 留言页面 -->
+        <activity
+            android:name=".personalcenter.activity.WordsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 我的订单 -->
+        <activity
+            android:name=".personalcenter.activity.MyOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 物流商二维码扫码页面 -->
+        <activity
+            android:name=".personalcenter.activity.OrderCaptureActivity"
+            android:label="二维码"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 个人中心 end -->
+
+
+        <!-- 收银台相关页面   start -->
+        <!-- 收银台页面 -->
+        <activity
+            android:name=".pay.activity.PayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <activity
+            android:name=".pay.activity.ConfirmOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <activity
+            android:name=".pay.activity.ChooseGiftCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <activity
+            android:name=".pay.activity.ChooseDiscountCouponActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 收银台相关页面   end -->
+
+
+        <!-- 超市相关页面   start -->
+        <!-- 超市 - 分类页面 -->
+        <activity
+            android:name=".home.activity.MarketClassifyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 超市 - 分类详情页面 -->
+        <activity
+            android:name=".classfiy.activity.ProductClassfiyDetilActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 超市 - 分类 - 搜索页面 -->
+        <activity
+            android:name=".shopping.activity.MarketSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 搜索相关页面   end -->
+
+
+        <!-- 个推推送开始 -->
+
+
+        <!-- 用户自定义服务继承自GTIntentService,作为SDK与APP桥梁服务,用来接收各种消息和命令回复 -->
+        <service android:name=".push.GeTuiIntentService" />
+
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name=".push.GetuiPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":olepushservice" />
+        <!-- 个推推送结束 -->
+
+
+        <!-- 微信支付回调activity配置  start -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 微信支付回调activity配置  end -->
+
+
+        <!-- 支付宝支付 start -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <!-- 支付宝支付  end -->
+
+
+        <!-- 银联支付 start -->
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false" />
+
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.unionpay.UPPayWapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 银联支付  end -->
+
+
+        <!-- 百度定位   start -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="qNrAWm0daKgvU8Q5dhkHY6yn" />
+        <!-- 百度定位   end -->
+
+
+        <!-- 友盟分享登录开始 -->
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="59566cf4734be45690001a0e" />
+
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 友盟分享登录结束 -->
+
+        <activity
+            android:name=".register.activity.FwxyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <activity
+            android:name=".personalcenter.activity.LogisticsDetailsActivity"
+            android:label="物流详情"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <activity
+            android:name=".shopping.activity.ProductListActivity"
+            android:label="商品列表"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <activity android:name=".shopping.activity.PreSaleActivity" />
+        <activity
+            android:name=".shopping.activity.ShoppingCartListActivity"
+            android:label="购物车 (%.0f)"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <activity
+            android:name=".shopping.activity.HwDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+
+        <!-- 支付成功失败界面 -->
+        <activity
+            android:name=".pay.activity.PayStateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+
+        <!-- 试用专题 -->
+        <activity
+            android:name=".trial.activity.TrialInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+
+        <!-- 试用商品详情 -->
+        <activity
+            android:name=".trial.activity.TrialProductDetilActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+
+        <!-- 试用列表 -->
+        <activity
+            android:name=".trial.activity.TrialListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 试用过期列表 -->
+        <activity
+            android:name=".trial.activity.TrialOverdueListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <!-- 试用规则 -->
+        <activity
+            android:name=".trial.activity.TrialRuleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+
+        <!-- 支付试用 -->
+        <activity
+            android:name=".trial.activity.TrialPayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+
+        <!-- 订单评价 -->
+        <activity
+            android:name=".personalcenter.activity.EvaluationOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+
+        <!-- 订单详情 -->
+        <activity
+            android:name=".personalcenter.activity.OrderInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+
+        <!-- 退款退货列表 -->
+        <activity
+            android:name=".personalcenter.activity.RefundActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+
+        <!-- Glide配置类 -->
+        <meta-data
+            android:name="com.crv.ole.utils.glide.MyGlideMoudle"
+            android:value="GlideModule" />
+
+        <activity
+            android:name=".home.activity.OleCaptureActivity"
+            android:label="二维码"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <activity
+            android:name=".home.activity.BarCodeDetailActivity"
+            android:label="电子价签"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <activity
+            android:name=".home.activity.CouponDialogActivity"
+            android:label="优惠卷对话框"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActivityDialogStyle" />
+        <activity
+            android:name=".personalcenter.activity.TrialReportActivity"
+            android:label="试用报告"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name=".base.PicPreviewActivity"
+            android:label="图片预览"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <activity
+            android:name=".personalcenter.activity.CouponHistoryActivity"
+            android:label="优惠卷"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <activity
+            android:name=".information.activity.ThematicDetailsActivity"
+            android:label="专题详情"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+        <activity
+            android:name=".shopping.activity.RefundDetailActivity"
+            android:label="退款详情"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme" />
+
+        <service android:name=".utils.lgimagecompressor.LGImgCompressorIntentService" />
+
+        <activity
+            android:name=".shopping.activity.GoodsTrialReportActivity"
+            android:label="试用报告"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme"/>
+
+        <activity
+            android:name=".home.activity.LiveActivity"
+            android:label="直播提醒"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme"/>
+
+        <!-- 首页跳转到的好物列表页面 -->
+        <activity
+            android:name=".shopping.activity.HwThemeListActivity"
+            android:label="好物"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme"/>
+
+        <!-- 首页跳转到的文章列表页面 -->
+        <activity
+            android:name=".information.activity.ArticleListActivity"
+            android:label="文章"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme"/>
+
+        <!-- 首页跳转到的试用活动列表页面 -->
+        <activity
+            android:name=".shopping.activity.TrialActiveListActivity"
+            android:label="试用"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme"/>
+
+        <!-- 首页跳转到的试用活动列表页面 -->
+        <activity
+            android:name=".trial.activity.TrialReportGoodsListActivity"
+            android:label="评测"
+            android:screenOrientation="portrait"
+            android:theme="@style/OleAppActivityTheme"/>
+    </application>
+
+</manifest>

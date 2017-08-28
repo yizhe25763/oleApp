@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f6f6f6"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_ole_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h44"
+        android:id="@+id/rl_myOrder_pagerSlideTab"
+        android:layout_below="@+id/title_layout"
+        android:background="@color/c_9b9580">
+
+        <!-- viewpager滑动指示器 -->
+        <com.crv.ole.personalcenter.ui.PagerSlidingTabStrip
+            android:id="@+id/myOrder_pagerSlideTab"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/h30"
+            android:background="@drawable/shape_whrite"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            app:pstsIndicatorColor="@color/transparent"
+            app:pstsIndicatorHeight="4dp"
+            app:pstsShouldExpand="true"
+            app:pstsTableTextColor="@color/white"
+            app:pstsTableBackgroundColor="@color/transparent"
+            app:pstsTableSelectBackgroundColor="@color/white"
+            app:pstsTableTextSelectColor="@color/c_222222"
+            app:pstsTextSize="13dp"
+            app:pstsUnderlineHeight="0dp" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_myOrder_pagerSlideTab" />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_demo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.crv.ole.demo.activity.RefreshAndLoadMoreActivity">
+    <include layout="@layout/layout_ole_title"/>
+
+    <com.xdandroid.simplerecyclerview.SimpleSwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+        <com.xdandroid.simplerecyclerview.SimpleRecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </com.xdandroid.simplerecyclerview.SimpleSwipeRefreshLayout>
+</LinearLayout>

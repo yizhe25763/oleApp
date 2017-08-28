@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_ole_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_bind_weixin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h50"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/w20"
+            >
+
+            <TextView
+                android:id="@+id/third_wx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/set_third_wx"
+                android:gravity="center_vertical"
+                android:textColor="@color/c_666666"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/set_wxState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/w11"
+                android:drawableRight="@mipmap/ic_into_pressed"
+                android:text="@string/set_third_unbind"
+                android:gravity="center_vertical"
+                android:textColor="@color/c_666666"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dbdbdb" />
+
+        <LinearLayout
+            android:id="@+id/ll_bind_weibo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h50"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/w20"
+            >
+
+            <TextView
+                android:id="@+id/third_wb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:text="@string/set_third_wb"
+                android:textColor="@color/c_666666"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/set_wbState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/w11"
+                android:drawableRight="@mipmap/ic_into_pressed"
+                android:text="@string/set_third_unbind"
+               android:gravity="center_vertical"
+                android:textColor="@color/c_666666"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dbdbdb" />
+
+        <LinearLayout
+            android:id="@+id/ll_bind_qq"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h50"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/w20"
+            >
+
+            <TextView
+                android:id="@+id/third_qq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/set_third_qq"
+                android:textColor="@color/c_666666"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/set_qqState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableRight="@mipmap/ic_into_pressed"
+                android:text="@string/set_third_unbind"
+                android:paddingRight="@dimen/w11"
+                android:gravity="center_vertical"
+                android:textColor="@color/c_666666"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dbdbdb" />
+    </LinearLayout>
+
+
+</LinearLayout>

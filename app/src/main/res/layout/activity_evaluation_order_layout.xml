@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_ole_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--商品评价-->
+            <LinearLayout
+                android:id="@+id/ll_product_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/f6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/h20"
+                    android:layout_marginTop="@dimen/h15"
+                    android:text="@string/evalua_order_service"
+                    android:textColor="@color/c_222222"
+                    android:textSize="14dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/radio_evalua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="@dimen/h20"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_service_nice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/btn_evalua_selector"
+                        android:drawablePadding="@dimen/w5"
+                        android:text="@string/service_nice"
+                        android:textColor="@color/txt_66"
+                        android:textSize="@dimen/w14" />
+
+                    <RadioButton
+                        android:id="@+id/rb_service_nomal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/w30"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/btn_evalua_selector"
+                        android:drawablePadding="@dimen/w5"
+                        android:text="@string/service_nomal"
+                        android:textColor="@color/txt_66"
+                        android:textSize="@dimen/w14" />
+
+
+                    <RadioButton
+                        android:id="@+id/rb_service_bad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/w30"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/btn_evalua_selector"
+                        android:drawablePadding="@dimen/w5"
+                        android:text="@string/service_bad"
+                        android:textColor="@color/txt_66"
+                        android:textSize="@dimen/w14" />
+                </RadioGroup>
+
+
+                <EditText
+                    android:id="@+id/et_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h100"
+                    android:layout_marginLeft="@dimen/h20"
+                    android:layout_marginRight="@dimen/h20"
+                    android:layout_marginTop="@dimen/h15"
+                    android:background="@drawable/f6_bg_width_corner_shape"
+                    android:gravity="top|left"
+                    android:hint="@string/feedback_hint"
+                    android:paddingBottom="@dimen/h10"
+                    android:paddingLeft="@dimen/h10"
+                    android:paddingRight="@dimen/h10"
+                    android:paddingTop="@dimen/h15"
+                    android:textColor="@color/txt_66"
+                    android:textColorHint="@color/txt_66"
+                    android:textSize="14dp" />
+
+
+                <Button
+                    android:id="@+id/bt_applay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h40"
+                    android:layout_marginBottom="@dimen/h80"
+                    android:layout_marginLeft="@dimen/h20"
+                    android:layout_marginRight="@dimen/h20"
+                    android:layout_marginTop="@dimen/h20"
+                    android:background="@drawable/button_9b_5r_selector"
+                    android:text="@string/help_submit"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

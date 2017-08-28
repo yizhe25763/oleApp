@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h45"
+        android:background="@drawable/bg_bottom_frame">
+
+        <ImageView
+            android:id="@+id/title_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/navigation_back_button_selector" />
+
+
+        <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/hw_share_selector" />
+
+
+        <ImageView
+            android:id="@+id/gwc_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:layout_toLeftOf="@id/ivShare"
+            android:background="@drawable/hw_gwc_selector"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/gwc_count_iv"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@id/ivShare"
+            android:src="@drawable/bg_dhsy_small"
+            android:visibility="visible" />
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/market_tab_title_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="6dp"
+            app:tabBackground="@color/transparent"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#222222"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#222222"
+            app:tabTextAppearance="@style/HwTabLayoutTextStyle"
+            app:tabTextColor="#666666" />
+
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h50"
+        android:background="@mipmap/title_bg">
+
+        <RelativeLayout
+            android:id="@+id/title_back_layout"
+            android:layout_width="@dimen/w40"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/title_back_ic" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/title_back_layout"
+            android:background="@color/c_e2e2e2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/w10"
+                android:background="@mipmap/search_box">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/transparent"
+                    android:drawableLeft="@mipmap/home_search_icon_down"
+                    android:gravity="center_vertical"
+                    android:hint=" 搜索"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/w10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="热搜："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索历史："
+                android:layout_marginLeft="@dimen/h10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="营销分类1"
+                android:layout_marginTop="@dimen/h20"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp18" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

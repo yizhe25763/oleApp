@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/background_light"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:id="@+id/cart_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item_cart"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/checkBox"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:focusableInTouchMode="false"
+            android:padding="12dp"
+            android:src="@drawable/checkbox_nor" />
+
+        <ImageView
+            android:id="@+id/ivProduceImage"
+            android:layout_width="101dp"
+            android:layout_height="109dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/checkBox"
+            android:background="@drawable/bg_zpbjd"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ivProduceImage"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/ivProduceImage"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="产品标题产品标题产品标题产品标题产品标题"
+            android:textColor="#222222"
+            android:textSize="13sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/ivProduceImage"
+            android:layout_alignLeft="@id/tvTitle"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="27dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="￥120.00"
+                android:textColor="#222222"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="23dp"
+                android:padding="5dp"
+                android:src="@drawable/btn_gwczj_selector" />
+
+            <TextView
+                android:id="@+id/tvCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:layout_toLeftOf="@id/ivAdd"
+                android:src="@drawable/product_add_selector"
+                android:text="2"
+                android:textColor="#222222"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/ivDel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:layout_toLeftOf="@id/tvCount"
+                android:padding="5dp"
+                android:src="@drawable/btn_gwcjs_selector" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvYiJiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ivProduceImage"
+            android:layout_alignLeft="@id/tvTitle"
+            android:maxLines="1"
+            android:text="已降¥ 12.00"
+            android:textColor="#9b9580"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

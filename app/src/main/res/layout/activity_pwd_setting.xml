@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/txt_ff">
+
+    <include layout="@layout/layout_ole_title"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       android:layout_marginTop="@dimen/h132"
+        android:layout_marginLeft="@dimen/w40"
+        android:layout_marginRight="@dimen/w40"
+        >
+
+        <EditText
+            android:id="@+id/setPwd_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w40"
+            android:drawableLeft="@mipmap/ic_mima"
+            android:drawablePadding="@dimen/w6"
+            android:hint="@string/pasword_hint"
+            android:maxLength="20"
+            android:textSize="@dimen/sp15"
+            android:singleLine="true"
+            android:textColor="@color/lightgrey"
+            android:inputType="textPassword"
+            android:background="@null"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w1"
+            android:background="@color/b_b6b6b6"/>
+
+        <RelativeLayout
+            android:id="@+id/setPwd_rePwd_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w40"
+            android:layout_marginTop="@dimen/h34" >
+
+            <EditText
+                android:id="@+id/setPwd_rePwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/ic_mima"
+                android:drawablePadding="@dimen/w6"
+                android:hint="@string/password_config"
+                android:textSize="@dimen/sp15"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:textColor="@color/lightgrey"
+                android:inputType="textPassword"
+                android:background="@null"/>
+
+            <ImageView
+                android:id="@+id/setPwd_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/btn_szsc_normal"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w1"
+            android:background="@color/b_b6b6b6"/>
+
+        <TextView
+            android:id="@+id/setPwd_rule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/h33"
+            android:gravity="center"
+            android:textSize="@dimen/sp12"
+            android:text="@string/set_pwd_rule"
+            android:textColor="@color/c_999999"/>
+        
+        <Button
+            android:id="@+id/setPwd_finish"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w40"
+            android:layout_marginTop="@dimen/h46"
+            android:text="@string/finish"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/white"
+            android:background="@drawable/confirm_btn_selector"
+            android:enabled="false"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

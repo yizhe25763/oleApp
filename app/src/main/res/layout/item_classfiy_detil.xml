@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@drawable/shape_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h185"
+            android:background="@color/f6">
+
+            <ImageView
+                android:id="@+id/product_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="1px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="1px"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/product_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/img_mgl"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/h5"
+            android:maxLines="2"
+            android:minHeight="@dimen/h30"
+            android:text="皮尔格鲁庄园欧派霞多丽皮尔格鲁庄园欧派霞多丽皮尔格鲁庄园欧派霞多丽皮尔格鲁庄园欧派霞多丽皮尔格鲁庄园欧派霞多丽皮尔格鲁庄园欧派霞多丽皮尔格鲁庄园欧派霞多丽"
+            android:textColor="@color/txt_22"
+            android:textSize="13dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/h20"
+            android:layout_marginTop="@dimen/h10">
+
+            <TextView
+                android:id="@+id/tx_v_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="￥89.80"
+                android:textColor="@color/txt_22"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/ic_v1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w2"
+                android:layout_toRightOf="@id/tx_v_price"
+                android:background="@drawable/ic_v1" />
+
+            <TextView
+                android:id="@+id/tx_old_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tx_v_price"
+                android:layout_marginLeft="@dimen/w2"
+                android:layout_toRightOf="@id/ic_v1"
+                android:text="￥79.20"
+                android:textColor="@color/c_999999"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:id="@+id/btn_shopp_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/w8"
+                android:background="@drawable/ic_gwc_button_selector" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

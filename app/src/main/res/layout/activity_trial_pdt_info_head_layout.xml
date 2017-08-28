@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/im_title"
+        android:layout_width="match_parent"
+        android:layout_height="210dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tx_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/h20"
+            android:text="日本人气大食堂"
+            android:textColor="@color/txt_22"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/tx_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/h15"
+            android:text="申请时间: 08月19日-09月20日"
+            android:textColor="@color/c_9b9580"
+            android:textSize="13dp" />
+
+
+        <me.codeboy.android.aligntextview.AlignTextView
+            android:id="@+id/tx_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_time"
+            android:layout_marginBottom="@dimen/h10"
+            android:layout_marginLeft="@dimen/h20"
+            android:layout_marginRight="@dimen/h20"
+            android:layout_marginTop="@dimen/h25"
+            android:lineSpacingExtra="13dp"
+            android:text="从喉头到锁骨从喉头到锁骨从喉头到锁骨从喉头到锁骨从喉头到锁骨从喉头到锁骨从喉头到锁骨从喉头到锁骨从喉头到锁骨从喉头到锁骨从喉头到锁骨从喉头到锁骨从喉头到锁骨从喉头到锁骨从喉头到锁骨"
+            android:textColor="@color/c_666666"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <!--选择商品或报告-->
+    <RadioGroup
+        android:id="@+id/rg_trial_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w20"
+        android:layout_marginRight="@dimen/w20"
+        android:layout_marginTop="@dimen/w10"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_trial_product"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/h30"
+            android:layout_weight="1"
+            android:background="@drawable/radio_bg_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/trial_product"
+            android:textColor="@drawable/radio_text_color_selector"
+            android:textSize="14dp" />
+
+
+        <RadioButton
+            android:id="@+id/rb_trial_report"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/h30"
+            android:layout_weight="1"
+            android:background="@drawable/radio_bg_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/trial_report"
+            android:textColor="@drawable/radio_text_color_selector"
+            android:textSize="14dp" />
+
+
+    </RadioGroup>
+
+</LinearLayout>

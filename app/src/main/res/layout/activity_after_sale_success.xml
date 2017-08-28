@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/txt_ff"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_ole_title" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_zccg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/w15"
+        android:gravity="center"
+        android:text="您的退货申请已经提交！"
+        android:textColor="@color/c_666666"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="客服将会在48小时内联系您"
+        android:textColor="@color/c_666666"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/versionTv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="135dp"
+        android:background="@drawable/btn_cjan"
+        android:gravity="center"
+        android:textColor="@color/c_222222"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".personalcenter.activity.CouponActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_layout" />
+
+        <com.handmark.pulltorefresh.library.extras.recyclerview.PullToRefreshRecyclerView
+            android:id="@+id/pullToRefreshRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            ptr:ptrMode="both" />
+
+        <LinearLayout
+            android:id="@+id/discount_coupon_more_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clock_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/w5"
+                android:gravity="center_vertical"
+                android:text="查看历史优惠券"
+                android:textColor="@drawable/more_discount_coupon_text_color_selector"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_ole_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/w40">
+
+        <RelativeLayout
+            android:id="@+id/setPwd_rePwd_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w40"
+            android:layout_marginTop="@dimen/w30" >
+
+            <EditText
+                android:id="@+id/activeBind_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/ic_rtx"
+                android:drawablePadding="@dimen/w6"
+                android:hint="@string/phone_hint"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/lightgrey"
+                android:background="@null"/>
+
+            <TextView
+                android:id="@+id/activeBind_codeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:text="@string/vipCard_gainCode"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/get_code_txt_selector"
+                android:enabled="false" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w1"
+            android:background="@color/b_b6b6b6"/>
+
+
+        <EditText
+            android:id="@+id/activeBind_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w40"
+            android:drawableLeft="@mipmap/ic_yzm"
+            android:drawablePadding="@dimen/w5"
+            android:layout_marginTop="@dimen/w20"
+            android:hint="@string/auth_code_hint"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/lightgrey"
+            android:inputType="number"
+            android:background="@null"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w1"
+            android:background="@color/b_b6b6b6"/>
+
+        <Button
+            android:id="@+id/activeBind_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w40"
+            android:layout_marginTop="@dimen/w70"
+            android:text="@string/next_btn"
+            android:textColor="@color/white"
+            android:enabled="false"
+            android:background="@drawable/confirm_btn_selector"/>
+    </LinearLayout>
+</RelativeLayout>

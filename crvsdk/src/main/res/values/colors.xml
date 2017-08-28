@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#e1ffffff</color>
+    <color name="c_333333">#333333</color>
+    <color name="c_00a1ec">#00a1ec</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="c_ff5d48">#ff5d48</color>
+    <color name="c_e2e2e2">#e2e2e2</color>
+    <color name="c_feefb8">#feefb8</color>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="bg_dialog">#CFFF</color>
+    <color name="text_color_message">#282828</color>
+    <color name="text_color_btn">#007AFF</color>
+    <color name="bg_btn_pressed">#CACACB</color>
+
+
+</resources>

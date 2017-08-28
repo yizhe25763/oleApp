@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/comment_title_layout"
+        layout="@layout/layout_ole_title"/>
+
+    <TextView
+        android:id="@+id/comment_none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="还没有评论"
+        android:drawableTop="@drawable/ic_ztwpl"
+        android:visibility="gone" />
+
+    <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/comment_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/comment_title_layout"
+        android:layout_above="@+id/comment_layout">
+        <ListView
+            android:id="@+id/comment_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w50"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c_f6f6f6">
+        <EditText
+            android:id="@+id/comment_inputEt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/w15"
+            android:paddingRight="@dimen/w10"
+            android:hint="喜欢就要说出来……"
+            android:singleLine="true"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/c_999999"
+            android:background="@null"/>
+        <View
+            android:layout_width="@dimen/w1"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/w15"
+            android:background="@color/c_cfcfcf"/>
+        <TextView
+            android:id="@+id/comment_sendTv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/w15"
+            android:gravity="center"
+            android:text="发送"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/c_d9be64"/>
+    </LinearLayout>
+</RelativeLayout>
